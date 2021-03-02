@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Navbar/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
+import NewNavbar from "./Components/NewNavbar";
+
+const state = { clicked: false };
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <Navbar />
+        <NewNavbar />
         <Switch>
           <Route path="/" exact component={Home} />
         </Switch>
