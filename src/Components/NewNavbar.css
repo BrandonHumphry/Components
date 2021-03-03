@@ -1,5 +1,4 @@
 .navBar_items {
-  background: grey;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -7,8 +6,46 @@
 }
 
 .navBar_logo {
-  color: #fff;
+  color: black;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.navMenu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.navLinks {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+}
+
+.navLinks:hover {
+  color: slategray;
+  border-radius: 4px;
+  transition: all 0.01s ease-out;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.navLinks_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar_items {
+    position: relative;
+  }
 }

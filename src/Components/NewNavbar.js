@@ -1,35 +1,44 @@
-import React from "react";
+import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import "./NewNavbar.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
-function NewNavbar() {
-  const state = { clicked: false };
+class NewNavbar extends Component {
+  state = { open: false };
 
-  function handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+  handleClick = () => {
+    this.setState({ open: !this.state.open });
   };
 
-  return (
-    <nav className="navBar_items">
-      <h1 className="navBar_logo">B</h1>
-      <div className="menuIcon" onClick={this.handleClick}>
-        <i className={this.state.clicked ? <MenuIcon /> : <CloseIcon />}></i>
-      </div>
-      <ul>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <a className={item.name} href={item.url}>
-                {item.title}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
-  );
-}
+  render() {
+    return (
+      <nav className="navBar_items">
+        <h1 className="navBar_logo">
+          <i className="fab fa-react"></i>
+        </h1>
 
+        <div className="menuIcon" onClick={this.handleClick}>
+          <i
+            className={
+              this.state.open ? "fas fa-times" : "fas fa-bars"
+              //   <CloseIcon /> : <MenuIcon />
+            }
+          ></i>
+        </div>
+        <ul className={this.state.open ? "navMenu_active" : "navMenu"}>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <a className={item.name} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    );
+  }
+}
 export default NewNavbar;
