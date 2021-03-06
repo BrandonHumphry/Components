@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
+  /* text-decoration: none; */
 }
 
 .navBar_logo {
@@ -37,7 +39,7 @@
 }
 
 .fa-bars {
-  color: white;
+  color: black;
 }
 
 .navLinks_mobile {
@@ -47,5 +49,55 @@
 @media screen and (max-width: 768px) {
   .navBar_items {
     position: relative;
+  }
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5000px;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.1 ease;
+    background-color: black;
+  }
+  .navMenu.active {
+    font-weight: 900;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .navLinks {
+    /* text-align: center;
+    width: 100%;
+    display: table;
+    text-decoration: none;
+    color: black;
+    padding-top: 100px;
+    z-index: 1; */
+    color: black;
+    text-decoration: none;
+    padding: 5.5rem 5.5rem;
+  }
+
+  .navBar_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1rem;
+  }
+  .fa-times {
+    color: black;
   }
 }
