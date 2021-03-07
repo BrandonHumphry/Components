@@ -8,7 +8,7 @@ function Home() {
         display: "flex",
         color: "black",
         alignItems: "center",
-        height: "300px"
+        height: "10290px"
       }}
     >
       <h1>home</h1>
