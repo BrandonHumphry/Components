@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-// import NewNavbar from "./Components/NewNavbar";
-import Nav from "./Nav";
-import SimpleMenu from "./NavMaterial";
+
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Testimonials from "./Components/Testimonials";
+import Portfolio from "./Components/Portfolio";
 
-// const state = { clicked: false };
+import "./App.css";
 
-function App() {
+const App = () => {
   const [resumeData, setResumeData] = useState({});
 
   useEffect(() => {
@@ -19,19 +20,18 @@ function App() {
         setResumeData(data);
       });
   }, []);
+
   return (
-    <div className="app">
-      <Router>
-        {/* <NewNavbar /> */}
-        {/* <Nav /> */}
-        {/* <SimpleMenu /> */}
-        <Header data={resumeData.main} />
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
-      </Router>
+    <div className="App">
+      <Header data={resumeData.main} />
+      <About data={resumeData.main} />
+      {/* <Resume data={resumeData.resume} /> */}
+      <Portfolio data={resumeData.portfolio} />
+      {/* <Testimonials data={resumeData.testimonials} /> */}
+      <Contact data={resumeData.main} />
+      <Footer data={resumeData.main} />
     </div>
   );
-}
+};
 
 export default App;
