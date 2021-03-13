@@ -18,10 +18,14 @@
   }
 
   .nav_logo {
-    position: fixed;
     left: 20px;
     width: 80px;
     object-fit: contain;
+  }
+
+  .nav_logo_area {
+    align-self: center;
+    position: fixed;
   }
 
   .nav_menu {
@@ -39,7 +43,5 @@
   .nav {
     justify-content: center;
     align-items: flex-start;
-  }
-  .nav_logo {
   }
 }
