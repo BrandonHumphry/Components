@@ -106,19 +106,20 @@
   /* mobile navigation
    -------------------------------------------------------------------- */
   #nav-wrap {
-    font: 12px "opensans-bold", sans-serif;
-    background: transparent !important;
-    letter-spacing: 1.5px;
-    width: auto;
+    /* font: 12px "opensans-bold", sans-serif; */
+    /* background: transparent !important; */
+    width: 100vw;
     position: fixed;
     top: 0;
     right: 0;
   }
+
+  /* navigation bar */
   #nav-wrap > a {
     width: 100vw;
     height: 48px;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #606060;
     position: relative;
     border: none;
     float: right;
@@ -131,10 +132,18 @@
     top: 0px;
   }
 
-  #nav-wrap > a:before,
+  /* navigation buttons */
+  #nav-wrap > a:before {
+    position: absolute;
+    border: 2px solid rgb(230, 97, 97);
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    content: "";
+  }
   #nav-wrap > a:after {
     position: absolute;
-    border: 2px solid #fff;
+    border: 2px solid rgb(13, 92, 160);
     top: 35%;
     left: 25%;
     right: 25%;
@@ -152,7 +161,6 @@
 
   /* hide menu panel */
   #nav-wrap ul#nav {
-    
     display: none;
     clear: both;
     width: auto;
@@ -173,6 +181,8 @@
   }
 
   ul#nav li {
+    letter-spacing: 0.5rem;
+    font: 12px "opensans-bold", sans-serif;
     display: block;
     height: auto;
     margin: 0 auto;

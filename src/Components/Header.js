@@ -22,10 +22,11 @@ const Header = ({ data }) => {
     <header id="home">
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
+          Hide Navigation
         </a>
+        {/* this shouldnt href to home it should close nav and position in same place */}
         <a className="mobile-btn" href="#home" title="Hide navigation">
-          Hide navigation
+          Show navigation
         </a>
 
         <ul id="nav" className="nav">
