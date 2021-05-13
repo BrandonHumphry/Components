@@ -46,9 +46,17 @@ body {
   border-radius: 10px;
 }
 
+.brand-title-hidden {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .toggle-button {
     display: flex;
+  }
+
+  .brand-title-hidden {
+    display: none;
   }
 
   .navbar-links {
@@ -74,6 +82,10 @@ body {
   }
 
   .navbar-links.active {
+    display: flex;
+  }
+
+  .brand-title-hidden.active {
     display: flex;
   }
 }

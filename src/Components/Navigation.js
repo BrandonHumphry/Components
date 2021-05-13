@@ -1,9 +1,20 @@
 import "./Navigation.css";
+const toggleButton = document.getElementsByClassName("brand-title")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const brandTitle = document.getElementsByClassName("brand-title")[0];
+const brandTitleHidden =
+  document.getElementsByClassName("brand-title-hidden")[0];
 
 const openNav = () => {
-  const toggleButton = document.getElementsByClassName("brand-title");
-  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
   navbarLinks.classList.toggle("active");
+  brandTitle.style.display = "none";
+  brandTitleHidden.style.display = "block";
+};
+
+const closeNav = () => {
+  navbarLinks.classList.toggle("active");
+  brandTitle.style.display = "block";
+  brandTitleHidden.style.display = "none";
 };
 
 function Navigation() {
@@ -17,7 +28,10 @@ function Navigation() {
     <div>
       <nav className="navbar">
         <div className="brand-title" onClick={openNav}>
-          Name
+          Open
+        </div>
+        <div className="brand-title-hidden" onClick={closeNav}>
+          Close
         </div>
 
         <div className="toggle-button">
