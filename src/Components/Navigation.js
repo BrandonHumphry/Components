@@ -1,4 +1,7 @@
 import "./Navigation.css";
+import Open from "./open.png";
+import Close from "./close.png";
+
 const toggleButton = document.getElementsByClassName("brand-title")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const brandTitle = document.getElementsByClassName("brand-title")[0];
@@ -28,10 +31,10 @@ function Navigation() {
     <div>
       <nav className="navbar">
         <div className="brand-title" onClick={openNav}>
-          Open
+          <img src={Open} alt="open nav" />
         </div>
         <div className="brand-title-hidden" onClick={closeNav}>
-          Close
+          <img src={Close} alt="close nav" />
         </div>
 
         <div className="toggle-button">
