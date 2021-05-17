@@ -2,22 +2,24 @@ import "./Navigation.css";
 import Open from "./open.png";
 import Close from "./close.png";
 
-const toggleButton = document.getElementsByClassName("brand-title")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const brandTitle = document.getElementsByClassName("brand-title")[0];
 const brandTitleHidden =
   document.getElementsByClassName("brand-title-hidden")[0];
 
 const openNav = () => {
+  brandTitle.classList.toggle("active");
   navbarLinks.classList.toggle("active");
-  brandTitle.style.display = "none";
-  brandTitleHidden.style.display = "block";
+
+  // brandTitle.style.display = "none";
+  // brandTitleHidden.style.display = "block";
 };
 
 const closeNav = () => {
+  brandTitle.classList.toggle("active");
   navbarLinks.classList.toggle("active");
-  brandTitle.style.display = "block";
-  brandTitleHidden.style.display = "none";
+  // brandTitle.style.display = "block";
+  // brandTitleHidden.style.display = "none";
 };
 
 function Navigation() {
@@ -37,13 +39,7 @@ function Navigation() {
           <img src={Close} alt="close nav" />
         </div>
 
-        <div className="toggle-button">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-
-        <div className="navbar-links">
+        <div className="navbar-links" id="navbar-links">
           <ul>
             <li>About</li>
             <li>Portfolio</li>
