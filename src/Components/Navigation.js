@@ -4,8 +4,8 @@ import Close from "./close.png";
 
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const brandTitle = document.getElementsByClassName("brand-title")[0];
-const brandTitleHidden =
-  document.getElementsByClassName("brand-title-hidden")[0];
+// const brandTitleHidden =
+//   document.getElementsByClassName("brand-title-hidden")[0];
 
 const openNav = () => {
   brandTitle.classList.toggle("active");

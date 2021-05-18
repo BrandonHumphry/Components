@@ -48,7 +48,7 @@ body {
     display: none;
   }
 
-  .navbar-links .active {
+  .navbar-links.active {
     background-color: grey;
     height: 100vh;
     display: flex;
@@ -70,7 +70,7 @@ body {
     align-items: flex-start;
   }
 
-  .brand-title .active {
+  .brand-title.active {
     display: flex;
   }
   .brand-title {
