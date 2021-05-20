@@ -6,7 +6,7 @@ import {
   Switch
 } from "react-router-dom";
 
-import Navigation from "./Components/Navigation";
+import Navigation2 from "./Components/Navigation2";
 
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Navigation />
+        <Navigation2 />
         <main>
           <Switch>
             <Route path="/" exact>
