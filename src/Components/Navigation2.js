@@ -1,5 +1,5 @@
 import "./Navigation2.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function Navigation2() {
@@ -8,14 +8,6 @@ function Navigation2() {
   return (
     <div>
       <nav className="navbar">
-        {/* <div className="brand-title" id={showLinks ? "close" : ""}>
-          <img
-            src={Open}
-            alt="open navigation menu"
-            onClick={() => setShowLinks(!showLinks)}
-          />
-        </div> */}
-
         <div
           className="brand-title"
           id={showLinks ? "close" : ""}
@@ -26,19 +18,34 @@ function Navigation2() {
         <div className="navbar-links" id={showLinks ? "hidden" : ""}>
           <ul>
             <li>
-              <Link exact to="/">
+              <NavLink
+                exact
+                to="/"
+                onClick={() => setShowLinks(!showLinks)}
+                activeClassName="selected"
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link exact to="/portfolio">
+              <NavLink
+                exact
+                to="/portfolio"
+                onClick={() => setShowLinks(!showLinks)}
+                activeClassName="selected"
+              >
                 Portfolio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link exact to="/contact">
+              <NavLink
+                exact
+                to="/contact"
+                onClick={() => setShowLinks(!showLinks)}
+                activeClassName="selected"
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
