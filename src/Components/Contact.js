@@ -56,7 +56,7 @@ const Contact = ({ data }) => {
                   size="35"
                   id="contactName"
                   name="contactName"
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={e => setName(e.target.value)}
                 />
               </div>
 
@@ -71,7 +71,7 @@ const Contact = ({ data }) => {
                   size="35"
                   id="contactEmail"
                   name="contactEmail"
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)}
                 />
               </div>
 
@@ -84,7 +84,7 @@ const Contact = ({ data }) => {
                   size="35"
                   id="contactSubject"
                   name="contactSubject"
-                  onChange={(e) => setSubject(e.target.value)}
+                  onChange={e => setSubject(e.target.value)}
                 />
               </div>
 
@@ -96,7 +96,7 @@ const Contact = ({ data }) => {
                   cols="50"
                   rows="15"
                   value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  onChange={e => setMessage(e.target.value)}
                   id="contactMessage"
                   name="contactMessage"
                 ></textarea>
@@ -117,7 +117,7 @@ const Contact = ({ data }) => {
           </div>
         </div>
 
-        <aside className="four columns footer-widgets">
+        {/* <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
             <h4>Address and Phone</h4>
             <p className="address">
@@ -127,12 +127,12 @@ const Contact = ({ data }) => {
               <br />
               <br />
               {street} <br />
-              {city}, {state} {zip}
+              {city} {state} {zip}
               <br />
               <span>{phone}</span>
             </p>
           </div>
-        </aside>
+        </aside> */}
       </div>
     </section>
   );

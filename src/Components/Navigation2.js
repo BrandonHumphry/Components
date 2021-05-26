@@ -5,6 +5,12 @@ import { useState } from "react";
 function Navigation2() {
   const [showLinks, setShowLinks] = useState(false);
 
+  const overflow = document.body.style.overflow = "hidden"
+
+  const disableScroll = () => {
+    id={showLinks + "hidden"} ? overflow
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -12,7 +18,9 @@ function Navigation2() {
           className="brand-title"
           id={showLinks ? "close" : ""}
           alt="open navigation menu"
-          onClick={() => setShowLinks(!showLinks)}
+          onClick={() => {
+            setShowLinks(!showLinks);
+          }}
         ></div>
 
         <div className="navbar-links" id={showLinks ? "hidden" : ""}>
