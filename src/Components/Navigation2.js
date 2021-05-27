@@ -5,11 +5,15 @@ import { useState } from "react";
 function Navigation2() {
   const [showLinks, setShowLinks] = useState(false);
 
-  const overflow = document.body.style.overflow = "hidden"
-
-  const disableScroll = () => {
-    id={showLinks + "hidden"} ? overflow
+  const overflow = () => {
+    !showLinks
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
   };
+
+  // const disableScroll = () => {
+  //   id={showLinks + "hidden"} ? overflow
+  // };
 
   return (
     <div>
@@ -20,6 +24,7 @@ function Navigation2() {
           alt="open navigation menu"
           onClick={() => {
             setShowLinks(!showLinks);
+            overflow();
           }}
         ></div>
 
@@ -29,7 +34,10 @@ function Navigation2() {
               <NavLink
                 exact
                 to="/"
-                onClick={() => setShowLinks(!showLinks)}
+                onClick={() => {
+                  setShowLinks(!showLinks);
+                  overflow();
+                }}
                 activeClassName="selected"
               >
                 About
@@ -39,7 +47,10 @@ function Navigation2() {
               <NavLink
                 exact
                 to="/portfolio"
-                onClick={() => setShowLinks(!showLinks)}
+                onClick={() => {
+                  setShowLinks(!showLinks);
+                  overflow();
+                }}
                 activeClassName="selected"
               >
                 Portfolio
@@ -49,7 +60,10 @@ function Navigation2() {
               <NavLink
                 exact
                 to="/contact"
-                onClick={() => setShowLinks(!showLinks)}
+                onClick={() => {
+                  setShowLinks(!showLinks);
+                  overflow();
+                }}
                 activeClassName="selected"
               >
                 Contact
