@@ -50,11 +50,14 @@ body {
 @media (max-width: 767px) {
   .brand-title {
     display: flex;
-    align-items: flex-end;
     background-image: url("./navOpen.png");
     background-repeat: no-repeat;
+    background-color: whitesmoke;
     height: 40px;
-    width: auto;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    border-bottom: 1px solid rgb(240, 240, 240);
   }
   .brand-title#close {
     background-image: url("./navClose.png");
@@ -74,6 +77,7 @@ body {
     display: flex;
     z-index: 2;
     background-color: whitesmoke;
+    position: fixed;
   }
 
   .navbar-links ul {

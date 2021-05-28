@@ -23,7 +23,38 @@ const About = ({ data }) => {
         <div className="nine columns main-col">
           <h2>About Me</h2>
 
-          <p>{bio}</p>
+          <p>
+            {bio}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Esta
+            pellentesque elit ullamcorper dignissim cras. Penatibus et magnis
+            dis parturient montes. Amet est placerat in egestas erat. Varius
+            duis at consectetur lorem donec massa sapien faucibus et. Facilisis
+            volutpat est velit egestas dui.<br></br>
+          </p>
+          <p>
+            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
+            Penatibus et magnis dis parturient montes. Amet est placerat in
+            egestas erat. Varius duis at consectetur.<br></br>
+          </p>
+          <p>
+            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
+            Penatibus et magnis dis parturient montes. Amet est placerat in
+            egestas erat. Varius duis at consectetur.<br></br>
+          </p>
+          <p>
+            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
+            Penatibus et magnis dis parturient montes. Amet est placerat in
+            egestas erat. Varius duis at consectetur.<br></br>
+          </p>
+          <p>
+            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
+            Penatibus et magnis dis parturient montes. Amet est placerat in
+            egestas erat. Varius duis at consectetur.<br></br>
+          </p>
         </div>
       </div>
     </section>

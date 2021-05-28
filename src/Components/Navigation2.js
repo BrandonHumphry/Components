@@ -11,10 +11,6 @@ function Navigation2() {
       : (document.body.style.overflow = "auto");
   };
 
-  // const disableScroll = () => {
-  //   id={showLinks + "hidden"} ? overflow
-  // };
-
   return (
     <div>
       <nav className="navbar">
