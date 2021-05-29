@@ -15,6 +15,10 @@ body {
   color: #4a4a4a;
 }
 
+.navbar {
+  display: flex;
+}
+
 .navbar-links {
   display: flex;
 }
@@ -45,6 +49,16 @@ body {
 
 .selected {
   font-weight: 900;
+}
+
+#logo {
+  background-image: url("./navClose.png");
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 0;
 }
 
 @media (max-width: 767px) {

@@ -22,7 +22,9 @@ function Navigation2() {
             setShowLinks(!showLinks);
             overflow();
           }}
-        ></div>
+        >
+          <div className="" id="logo" alt="logo"></div>
+        </div>
 
         <div className="navbar-links" id={showLinks ? "hidden" : ""}>
           <ul>
