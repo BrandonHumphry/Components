@@ -14,6 +14,7 @@ function Navigation2() {
   return (
     <div>
       <nav className="navbar">
+        <div className="logo" alt="logo"></div>
         <div
           className="brand-title"
           id={showLinks ? "close" : ""}
@@ -22,9 +23,7 @@ function Navigation2() {
             setShowLinks(!showLinks);
             overflow();
           }}
-        >
-          <div className="" id="logo" alt="logo"></div>
-        </div>
+        />
 
         <div className="navbar-links" id={showLinks ? "hidden" : ""}>
           <ul>

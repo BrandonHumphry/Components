@@ -6,72 +6,75 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
   color: #4a4a4a;
-}
-
+} */
 .navbar {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  width: 100%;
 }
-
+.logo {
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+}
 .navbar-links {
   display: flex;
 }
-
 .navbar-links ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 .navbar-links li {
   list-style: none;
   color: white;
   padding: 1rem;
   display: block;
 }
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;
   color: white;
   border-radius: 10px;
 }
-
 .brand-title {
   display: none;
 }
-
 .selected {
   font-weight: 900;
 }
 
-#logo {
-  background-image: url("./navClose.png");
-  background-repeat: no-repeat;
-  background-color: whitesmoke;
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  right: 0;
-}
-
 @media (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    position: fixed;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
   .brand-title {
     display: flex;
     background-image: url("./navOpen.png");
     background-repeat: no-repeat;
     background-color: whitesmoke;
     height: 40px;
-    width: 100vw;
-    position: fixed;
-    z-index: 2;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    width: 40px;
   }
   .brand-title#close {
     background-image: url("./navClose.png");
@@ -80,7 +83,6 @@ body {
   .navbar-links {
     display: none;
   }
-
   .navbar-links#hidden {
     position: absolute;
     left: 0px;
@@ -93,22 +95,15 @@ body {
     background-color: whitesmoke;
     position: fixed;
   }
-
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
   }
-
   .navbar-links li {
     text-align: center;
     color: black;
     font-size: 20px;
     letter-spacing: 0.1em;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
