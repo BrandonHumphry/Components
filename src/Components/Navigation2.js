@@ -11,6 +11,14 @@ function Navigation2() {
       : (document.body.style.overflow = "auto");
   };
 
+  const transition = () => {
+    !showLinks
+      ? (document.getElementsByClassName(".navbar-links#hidden").style.height =
+          "100vh")
+      : (document.getElementsByClassName(".navbar-links#hidden").style.height =
+          "0px");
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -22,6 +30,7 @@ function Navigation2() {
           onClick={() => {
             setShowLinks(!showLinks);
             overflow();
+            transition();
           }}
         />
 

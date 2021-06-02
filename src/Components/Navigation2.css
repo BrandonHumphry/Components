@@ -82,6 +82,7 @@ body {
   }
   .navbar-links {
     display: none;
+    height: 0;
   }
   .navbar-links#hidden {
     position: absolute;
@@ -94,6 +95,7 @@ body {
     z-index: 2;
     background-color: whitesmoke;
     position: fixed;
+    transition: height 200ms;
   }
   .navbar-links ul {
     width: 100%;
