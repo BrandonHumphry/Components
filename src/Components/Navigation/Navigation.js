@@ -1,8 +1,8 @@
-import "./Navigation2.css";
+import "./Navigation.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-function Navigation2() {
+function Navigation() {
   const [showLinks, setShowLinks] = useState(false);
 
   const overflow = () => {
@@ -11,13 +11,11 @@ function Navigation2() {
       : (document.body.style.overflow = "auto");
   };
 
-  const transition = () => {
-    !showLinks
-      ? (document.getElementsByClassName(".navbar-links#hidden").style.height =
-          "100vh")
-      : (document.getElementsByClassName(".navbar-links#hidden").style.height =
-          "0px");
-  };
+  // const transiton = () = {
+  //   !showLinks
+  //   ?(document.body.navbar-links#hidden.style.height = "0")
+  //   ?(document.body.navbar-links#hidden.style.height = "100%")
+  // }
 
   return (
     <div>
@@ -30,7 +28,6 @@ function Navigation2() {
           onClick={() => {
             setShowLinks(!showLinks);
             overflow();
-            transition();
           }}
         />
 
@@ -82,4 +79,4 @@ function Navigation2() {
   );
 }
 
-export default Navigation2;
+export default Navigation;

@@ -6,11 +6,11 @@ import {
   Switch
 } from "react-router-dom";
 
-import Navigation2 from "./Components/Navigation2";
+import Navigation from "./Components/Navigation/Navigation";
 
-import About from "./Components/About";
-import Portfolio from "./Components/Portfolio";
-import Contact from "./Components/Contact";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 import Footer from "./Components/Footer";
 
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Navigation2 />
+        <Navigation />
         <main>
           <Switch>
             <Route path="/" exact>

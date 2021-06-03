@@ -6,13 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: whitesmoke;
-  color: #4a4a4a;
-} */
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -33,7 +27,6 @@ body {
 }
 .navbar-links ul {
   margin: 0;
-  padding: 0;
   display: flex;
 }
 .navbar-links li {
@@ -82,7 +75,10 @@ body {
   }
   .navbar-links {
     display: none;
-    height: 0;
+    height: 0px;
+    transition-property: height;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
   }
   .navbar-links#hidden {
     position: absolute;
@@ -95,7 +91,6 @@ body {
     z-index: 2;
     background-color: whitesmoke;
     position: fixed;
-    transition: height 200ms;
   }
   .navbar-links ul {
     width: 100%;
