@@ -21,15 +21,16 @@ const Footer = ({ data }) => {
 
           <ul className="copyright">
             <li>
-              Made by{" "}
-              <a title="PAPA" href="http://www.papareact.com/">
-                PAPA
+              Created in{" "}
+              <a title="PAPA" href="">
+                2021
               </a>
             </li>
           </ul>
         </div>
         <div id="go-top">
           <a className="smoothscroll" title="Back to Top" href="#home">
+            {/* how to make this dynamic so the scroll goes back up to the first div on each page */}
             <i className="icon-up-open"></i>
           </a>
         </div>

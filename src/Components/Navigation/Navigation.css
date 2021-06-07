@@ -92,7 +92,7 @@ body {
     background-color: whitesmoke;
     position: fixed;
   }
-  .navbar-links ul {
+  .navbar-links > ul {
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;

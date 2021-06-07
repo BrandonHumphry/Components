@@ -11,11 +11,16 @@ function Navigation() {
       : (document.body.style.overflow = "auto");
   };
 
-  // const transiton = () = {
+  // const heightTransition = document;
+  // document.querySelector(".navbar-links#hidden");
+
+  // const transition = () => {
   //   !showLinks
-  //   ?(document.body.navbar-links#hidden.style.height = "0")
-  //   ?(document.body.navbar-links#hidden.style.height = "100%")
-  // }
+  //     ? // ? (document.querySelector(".navbar-links#hidden").style.height = "0")
+  //       // : (document.querySelector(".navbar-links#hidden").style.height = "100%");
+  //       (heightTransition.style.height = "0")
+  //     : (heightTransition.style.height = "100%");
+  // };
 
   return (
     <div>
@@ -28,6 +33,7 @@ function Navigation() {
           onClick={() => {
             setShowLinks(!showLinks);
             overflow();
+            // transition();
           }}
         />
 

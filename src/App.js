@@ -7,11 +7,9 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
-
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -33,6 +31,7 @@ const App = () => {
             <Redirect to="/" />
           </Switch>
         </main>
+        <Footer />
       </Router>
     </div>
   );
