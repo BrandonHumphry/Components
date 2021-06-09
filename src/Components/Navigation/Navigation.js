@@ -6,14 +6,22 @@ function Navigation() {
   const [showLinks, setShowLinks] = useState(false);
 
   const overflow = () => {
+    // const heightUl = document.querySelector(".navbar-links#hidden");
     !showLinks
       ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "auto");
+      : // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
+        // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
+        // (heightUl.style.opacity = "0")
+        (document.body.style.overflow = "auto");
+    // (document.querySelector(".navbar-links#hidden").style.height = "100vh");
   };
 
-  // const heightTransition = document;
-  // document.querySelector(".navbar-links#hidden");
+  // const heightTransition = () => {
+  //   const heightUl = document.querySelector(".navbar-links#hidden");
+  //   // const heightUl = document.getElementById("hidden");
 
+  //   heightUl.style.opacity = "0";
+  // };
   // const transition = () => {
   //   !showLinks
   //     ? // ? (document.querySelector(".navbar-links#hidden").style.height = "0")
@@ -33,7 +41,7 @@ function Navigation() {
           onClick={() => {
             setShowLinks(!showLinks);
             overflow();
-            // transition();
+            // heightTransition();
           }}
         />
 

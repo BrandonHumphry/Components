@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = ({ data }) => {
   if (data) {
@@ -15,26 +16,26 @@ const Footer = ({ data }) => {
 
   return (
     <footer>
-      <div className="row">
+      {/* <div className="row">
         <div className="twelve columns">
-          <ul className="social-links">{networks}</ul>
+          <ul className="social-links">{networks}</ul> */}
 
-          <ul className="copyright">
-            <li>
-              Created in{" "}
-              <a title="PAPA" href="">
-                2021
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="go-top">
+      <ul className="copyright">
+        <div id="toTop">
           <a className="smoothscroll" title="Back to Top" href="#home">
             {/* how to make this dynamic so the scroll goes back up to the first div on each page */}
             <i className="icon-up-open"></i>
           </a>
         </div>
-      </div>
+        <li>
+          Created in{" "}
+          <a title="" href="">
+            2021
+          </a>
+        </li>
+      </ul>
+      {/* </div>
+      </div> */}
     </footer>
   );
 };

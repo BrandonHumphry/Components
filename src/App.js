@@ -10,7 +10,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (

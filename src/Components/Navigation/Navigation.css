@@ -76,9 +76,6 @@ body {
   .navbar-links {
     display: none;
     height: 0px;
-    transition-property: height;
-    transition-duration: 0.4s;
-    transition-timing-function: linear;
   }
   .navbar-links#hidden {
     position: absolute;
@@ -91,6 +88,12 @@ body {
     z-index: 2;
     background-color: whitesmoke;
     position: fixed;
+    opacity: 0;
+    transition: opacity 2s;
+    transition-property: height;
+    transition-duration: 1.4s;
+    /* transition-timing-function: linear; */
+    transition-timing-function: ease-in-out;
   }
   .navbar-links > ul {
     width: 100%;
