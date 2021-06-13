@@ -1,9 +1,6 @@
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: whitesmoke;
   width: 100vw;
+  margin-top: auto;
 }
 
 .copyright {
@@ -12,16 +9,18 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 40px;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 767px) {
-  footer {
-    height: 100%;
-    position: absolute;
-    bottom: 0;
+  /* .copyright {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    height: 20px;
   }
   ul,
   ol {
     margin: 0;
-  }
+  } */
 }

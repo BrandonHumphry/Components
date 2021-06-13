@@ -12,6 +12,8 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Footer from "./Components/Footer/Footer";
 
+import "./App.css";
+
 const App = () => {
   return (
     <div className="App">
