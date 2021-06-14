@@ -1,5 +1,3 @@
-import React from "react";
-
 const Portfolio = ({ data }) => {
   if (data) {
     var projects = data.projects.map(function (projects) {

@@ -1,5 +1,5 @@
-footer {
-  width: 100vw;
+.footer {
+  width: 100%;
   margin-top: auto;
 }
 
@@ -13,7 +13,7 @@ footer {
   background-color: whitesmoke;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
   /* .copyright {
     padding-top: 20px;
     margin-bottom: 20px;
@@ -23,4 +23,4 @@ footer {
   ol {
     margin: 0;
   } */
-}
+/* } */

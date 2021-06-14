@@ -33,7 +33,9 @@ const App = () => {
             <Redirect to="/" />
           </Switch>
         </main>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </Router>
     </div>
   );

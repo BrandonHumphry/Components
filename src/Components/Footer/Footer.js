@@ -1,25 +1,9 @@
-import React from "react";
-import "./Footer.css";
+import "./FooterStyle.css";
 
-const Footer = ({ data }) => {
-  if (data) {
-    var networks = data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
-  }
-
+const Footer = () => {
   return (
-    <footer>
-      {/* <div className="row">
-        <div className="twelve columns">
-          <ul className="social-links">{networks}</ul> */}
-
+    <>
+    <div className="footer">
       <ul className="copyright">
         <div id="toTop">
           <a className="smoothscroll" title="Back to Top" href="#home">
@@ -34,9 +18,8 @@ const Footer = ({ data }) => {
           </a>
         </li>
       </ul>
-      {/* </div>
-      </div> */}
-    </footer>
+      </div>
+    </>
   );
 };
 
