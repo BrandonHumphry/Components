@@ -1,3 +1,6 @@
+import Card from "../Components/Card/Card";
+import "./Portfolio.css";
+
 const Portfolio = ({ data }) => {
   if (data) {
     var projects = data.projects.map(function (projects) {
@@ -24,20 +27,16 @@ const Portfolio = ({ data }) => {
   }
 
   return (
-    <section id="portfolio">
-      <div className="row">
-        <div className="twelve columns collapsed">
-          <h1>Check Out Some of My Works.</h1>
-
-          <div
-            id="portfolio-wrapper"
-            className="bgrid-quarters s-bgrid-thirds cf"
-          >
-            {projects}
-          </div>
-        </div>
+    <div>
+      <div className="gallery">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
-    </section>
+    </div>
   );
 };
 

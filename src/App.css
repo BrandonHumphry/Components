@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: "Sora", Arial, Helvetica, sans-serif;
 
   min-height: 100%;
   display: flex;
-  
+
   flex-direction: column;
 }
 
