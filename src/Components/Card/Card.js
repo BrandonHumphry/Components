@@ -1,11 +1,12 @@
 import logo from "../Navigation/logo.png";
+import "./Card.css";
 
 function Card() {
   return (
     <div>
       <div className="content">
-        <img src={logo} alt="" />
-        <div className="text">Test</div>
+        {/* <img src={logo} alt="" /> */}
+        {/* <div className="text">Test</div> */}
       </div>
     </div>
   );

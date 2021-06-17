@@ -17,26 +17,27 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <Router>
-        <Navigation />
-        <main>
-          <Switch>
-            <Route path="/" exact>
-              <About />
-            </Route>
-            <Route path="/portfolio" exact>
-              <Portfolio />
-            </Route>
-            <Route path="/contact" exact>
-              <Contact />
-            </Route>
-            <Redirect to="/" />
-          </Switch>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </Router>
+      <body>
+        <Router>
+          <Navigation />
+          <main>
+            <Switch>
+              <Route path="/" exact>
+                <About />
+              </Route>
+              <Route path="/portfolio" exact>
+                <Portfolio />
+              </Route>
+              <Route path="/contact" exact>
+                <Contact />
+              </Route>
+              <Redirect to="/" />
+            </Switch>
+          </main>
+        </Router>
+
+        <Footer />
+      </body>
     </div>
   );
 };
