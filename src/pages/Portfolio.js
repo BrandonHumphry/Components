@@ -5,9 +5,7 @@ const Portfolio = () => {
   return (
     <div>
       <div className="gallery">
-        <Card>
-          <p>1</p>
-        </Card>
+        <Card>1</Card>
         <Card>2</Card>
         <Card>3</Card>
         <Card>4</Card>

@@ -1,9 +1,21 @@
 .content {
   width: 33.33%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 10px;
 }
 
 .content > img {
-  width: 100%;
+  width: auto;
+  height: auto;
 }
+
+/* @media (max-width: 767px) {
+  .content {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    width: 100%;
+  }
+} */

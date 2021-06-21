@@ -2,15 +2,20 @@
   width: 1000px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   flex-flow: wrap;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
 
-@media (max-width: 767px) {
-  /* .gallery {
-    width: 620px;
-  } */
+@media (max-width: 1000px) {
+  .gallery {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    max-width: 100%;
+  }
 }
