@@ -8,6 +8,13 @@
   justify-content: center;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-variant: none;
+}
+
 @media (max-width: 1000px) {
   .gallery {
     width: 640px;

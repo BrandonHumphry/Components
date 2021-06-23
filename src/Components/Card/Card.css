@@ -9,6 +9,18 @@
   height: auto;
 }
 
+.content > img:hover {
+  background-color: #000;
+  opacity: 0.7;
+  transition: ease-in-out 0.2s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+/* s */
+
 /* @media (max-width: 767px) {
   .content {
     width: 50%;

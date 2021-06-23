@@ -4,6 +4,11 @@ import "./Portfolio.css";
 const Portfolio = () => {
   return (
     <div>
+      <div className="tabs">
+        <li>UX Design</li>
+        <li>Development</li>
+        <li>Illustration</li>
+      </div>
       <div className="gallery">
         <Card>1</Card>
         <Card>2</Card>
