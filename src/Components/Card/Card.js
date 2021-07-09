@@ -1,4 +1,4 @@
-import Loftware from "./Loftware.png";
+import Ad from "./ad.png";
 import "./Card.css";
 
 function Card() {
@@ -6,7 +6,7 @@ function Card() {
     <div>
       <div className="content">
         <div className="overlay">topic</div>
-        <img src={Loftware} alt="" />
+        <img src={Ad} alt="" />
         {/* <div className="text">Test</div> */}
       </div>
     </div>

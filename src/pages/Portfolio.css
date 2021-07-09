@@ -1,5 +1,12 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-variant: none;
+}
+
 .gallery {
-  width: 1000px;
+  /* width: 1000px; */
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
@@ -8,21 +15,14 @@
   justify-content: center;
 }
 
-.tabs {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-variant: none;
-}
-
 @media (max-width: 1000px) {
   .gallery {
-    width: 640px;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 650px) {
   .gallery {
-    max-width: 100%;
+    width: 100%;
   }
 }

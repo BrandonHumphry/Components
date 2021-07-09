@@ -5,7 +5,7 @@
 }
 
 .content > img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -21,13 +21,13 @@
 
 /* s */
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .content {
     width: 50%;
   }
 }
 @media (max-width: 500px) {
   .content {
-    width: 100%;
+    width: 95%;
   }
-} */
+}
