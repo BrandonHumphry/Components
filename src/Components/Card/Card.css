@@ -1,5 +1,5 @@
 .content {
-  width: 33.33%;
+  /* width: 33.33%; */
   /* border: 1px solid blue; */
   margin: 10px;
 }
@@ -23,7 +23,7 @@
 
 @media (max-width: 767px) {
   .content {
-    width: 50%;
+    /* width: 50%; */
   }
 }
 @media (max-width: 500px) {
