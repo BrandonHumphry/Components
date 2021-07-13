@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Footer from "./Components/Footer/Footer";
+import SelectedClient from "./pages/Portfolio/SelectedClient";
 
 import "./App.css";
 
@@ -30,6 +31,9 @@ const App = () => {
               </Route>
               <Route path="/contact" exact>
                 <Contact />
+              </Route>
+              <Route path="/selectedclient" exact>
+                <SelectedClient />
               </Route>
               <Redirect to="/" />
             </Switch>

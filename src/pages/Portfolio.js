@@ -1,5 +1,13 @@
 import Card from "../Components/Card/Card";
 import "./Portfolio.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from "react-router-dom";
+
+import SelectedClient from "./Portfolio/SelectedClient";
 
 const Portfolio = () => {
   return (
@@ -9,14 +17,18 @@ const Portfolio = () => {
         <li>Development</li>
         <li>Illustration</li>
       </div>
-      <div className="gallery">
-        <Card>1</Card>
-        <Card>2</Card>
-        <Card>3</Card>
-        <Card>4</Card>
-        <Card>5</Card>
-        <Card>6</Card>
-      </div>
+
+      <Router>
+        <div className="gallery">
+          {/* <Switch> */}
+          <Card>
+            <Route path="/selectedclient" exact>
+              <SelectedClient />
+            </Route>
+          </Card>
+          {/* </Switch> */}
+        </div>
+      </Router>
     </div>
   );
 };
