@@ -13,7 +13,7 @@ const SelectedClient = () => {
           <li>2</li>
         </ul>
       </div> */}
-      <div className="projectAbout">
+      {/* <div className="projectAbout">
         <div className="projectLogo">
           <img src="./Logo.png" alt="alt text here" />
         </div>
@@ -46,7 +46,7 @@ const SelectedClient = () => {
             style="width:95%;"
           />
         </picture>
-      </div>
+      </div> */}
     </div>
   );
 };
