@@ -1,7 +1,7 @@
 import Ad from "./ad.png";
 import "./Card.css";
 
-function Card() {
+const Card = () => {
   return (
     <div>
       <div className="content">
@@ -11,6 +11,6 @@ function Card() {
       </div>
     </div>
   );
-}
+};
 
 export default Card;
