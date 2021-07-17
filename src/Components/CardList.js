@@ -1,10 +1,7 @@
-import Card from "./Card";
+import Card from "./Card/Card";
+import { Link } from "react-router-dom";
 
-const CardList = ({ id, title, company, description }) => {
-  //   const cards = props.cards;
-
-  //   console.log(props, cards);
-
+const CardList = ({ cards, id, title, company, description }) => {
   return (
     <div className="card-list">
       {cards.map(card => (
@@ -12,6 +9,7 @@ const CardList = ({ id, title, company, description }) => {
           <h2>{card.title}</h2>
           <p>{card.company}</p>
           <p>{card.description}</p>
+          <Link to="/selectedclient" />
         </Card>
       ))}
     </div>

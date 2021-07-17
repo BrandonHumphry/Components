@@ -2,7 +2,7 @@ import Card from "../Components/Card/Card";
 import "./Portfolio.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import CardList from "../Components/CardList";
 const Portfolio = () => {
   const [cards, setCards] = useState([
     {
@@ -33,7 +33,8 @@ const Portfolio = () => {
       </div>
 
       <div className="gallery">
-        <Link to="/selectedclient">
+        <CardList title={title} />
+        {/* <Link to="/selectedclient">
           <Card />
         </Link>
         <Link to="/selectedclient">
@@ -50,7 +51,7 @@ const Portfolio = () => {
         </Link>
         <Link to="/selectedclient">
           <Card />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
