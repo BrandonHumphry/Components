@@ -1,9 +1,12 @@
-import Card from "../Components/Card/Card";
 import "./Portfolio.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import CardList from "../Components/CardList";
+
 const Portfolio = () => {
+  const location = useLocation();
+  const { fromNotifications } = location.state;
+
   const [cards, setCards] = useState([
     {
       id: 1,
@@ -21,7 +24,15 @@ const Portfolio = () => {
       id: 3,
       title: "card 1",
       description: "about the topic",
-      company: "company name"
+      company: "company name",
+      link: (
+        <Link
+          to={{
+            pathname: "/selectedclient",
+            state: { fromNotifications: true }
+          }}
+        />
+      )
     }
   ]);
   return (
@@ -33,7 +44,7 @@ const Portfolio = () => {
       </div>
 
       <div className="gallery">
-        <CardList title={title} />
+        <CardList cards={cards} />
         {/* <Link to="/selectedclient">
           <Card />
         </Link>
