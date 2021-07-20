@@ -4,35 +4,37 @@ import { useState } from "react";
 import CardList from "../Components/CardList";
 
 const Portfolio = () => {
-  const location = useLocation();
-  const { fromNotifications } = location.state;
+  // const location = useLocation();
+  // const { fromNotifications } = location.state;
 
   const [cards, setCards] = useState([
     {
       id: 1,
       title: "card 1",
       description: "about the topic",
-      company: "company name"
+      company: "company name",
+      path: "/selectedclient"
     },
     {
       id: 2,
       title: "card 1",
       description: "about the topic",
-      company: "company name"
+      company: "company name",
+      path: "/selectedclient"
     },
     {
       id: 3,
       title: "card 1",
       description: "about the topic",
-      company: "company name",
-      link: (
-        <Link
-          to={{
-            pathname: "/selectedclient",
-            state: { fromNotifications: true }
-          }}
-        />
-      )
+      company: "company name"
+      // link: (
+      //   <Link
+      //     to={{
+      //       pathname: "/selectedclient",
+      //       state: { fromNotifications: true }
+      //     }}
+      //   />
+      // )
     }
   ]);
   return (

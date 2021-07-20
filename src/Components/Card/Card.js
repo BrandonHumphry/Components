@@ -4,11 +4,11 @@ import "./Card.css";
 const Card = () => {
   return (
     <div>
-      <div className="content">
+      {/* <div className="content">
         <div className="overlay">topic</div>
-        <img src={Ad} alt="" />
-        {/* <div className="text">Test</div> */}
-      </div>
+        <img src={Ad} alt="" /> */}
+      {/* <div className="text">Test</div> */}
+      {/* </div> */}
     </div>
   );
 };
