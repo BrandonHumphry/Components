@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
-const CardList = ({ cards, id, title, company, description, path }) => {
+const CardList = ({ cards, id, title, company, description, path, link }) => {
   return (
     <div className="card-list">
       {cards.map(card => (
@@ -16,6 +16,7 @@ const CardList = ({ cards, id, title, company, description, path }) => {
             <h2>{title}</h2>
             <p>{company}</p>
             <p>{description}</p>
+            {link}
             {/* </Card> */}
           </Link>
         </Router>
