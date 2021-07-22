@@ -19,7 +19,9 @@
   visibility: hidden;
 }
 
-/* s */
+.cardText {
+  display: none;
+}
 
 @media (max-width: 767px) {
   .content {
@@ -29,5 +31,8 @@
 @media (max-width: 500px) {
   .content {
     width: 95%;
+  }
+  .cardText {
+    display: block;
   }
 }

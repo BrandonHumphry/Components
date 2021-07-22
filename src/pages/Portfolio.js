@@ -9,37 +9,38 @@ const Portfolio = () => {
   // const location = useLocation();
   // const { fromNotifications } = location.state;
 
-  const [cards, setCards] = useState([
-    {
-      id: 1,
-      title: "card 1",
-      description: "about the topic",
-      company: "company name",
-      image: "../Components/Card/ad.png",
-      path: "/selectedclient"
-    },
-    {
-      id: 2,
-      title: "card 2",
-      description: "about the topic",
-      company: "company name",
-      path: "/selectedclient"
-    },
-    {
-      id: 3,
-      title: "card 3",
-      description: "about the topic",
-      company: "company name",
-      link: (
-        <Link
-          to={{
-            pathname: "/selectedclient",
-            state: { fromNotifications: true }
-          }}
-        />
-      )
-    }
-  ]);
+  // const [cards, setCards] = useState([
+  //   {
+  //     id: 1,
+  //     title: "card 1",
+  //     description: "about the topic",
+  //     company: "company name",
+  //     image: "../Components/Card/ad.png",
+  //     path: "/selectedclient"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "card 2",
+  //     description: "about the topic",
+  //     company: "company name",
+  //     path: "/selectedclient"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "card 3",
+  //     description: "about the topic",
+  //     company: "company name",
+  //     link: (
+  //       <Link
+  //         to={{
+  //           pathname: "/selectedclient",
+  //           state: { fromNotifications: true }
+  //         }}
+  //       />
+  //     )
+  //   }
+  // ]);
+
   return (
     <div>
       <div className="tabs">
@@ -50,7 +51,28 @@ const Portfolio = () => {
 
       <div className="gallery">
         {/* <CardList cards={cards} /> */}
-        <Card cards={cards}></Card>
+        {/* <Card cards={cards}></Card> */}
+        <Card
+          title="title for card 1"
+          company="company 1"
+          description="description 1"
+          linkTo="/selectedclient"
+          image={Ad}
+        />
+        <Card
+          title="title for card 1"
+          company="company 1"
+          description="description 1"
+          linkTo="/selectedclient"
+          image={Ad}
+        />
+        <Card
+          title="title for card 1"
+          company="company 1"
+          description="description 1"
+          linkTo="/selectedclient"
+          image={Ad}
+        />
         {/* <Link to="/selectedclient">
           <Card /> */}
       </div>
