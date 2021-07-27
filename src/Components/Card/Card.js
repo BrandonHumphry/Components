@@ -21,7 +21,6 @@ const Card = props => {
   const { id, image, title, company, description, linkTo } = props;
   return (
     <div className="card">
-      {/* {cards.map(card => ( */}
       <div className="cardInfo" key={id}>
         <Link to={linkTo}>
           <img className="cardImage" src={image} alt="" />
@@ -33,12 +32,6 @@ const Card = props => {
           <button className="cardButton">View</button>
         </div>
       </div>
-
-      {/* <div className="content">
-        <div className="overlay">topic</div>
-        <img src={Ad} alt="" /> */}
-      {/* <div className="text">Test</div> */}
-      {/* </div> */}
     </div>
   );
 };

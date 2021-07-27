@@ -55,6 +55,22 @@ const Portfolio = () => {
         <Card
           title="title for card 1"
           company="company 1"
+          description="Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit. Nulla lobortis sapien vel suscipit 
+          rutrum."
+          linkTo="/selectedclient"
+          image={Ad}
+        />
+        <Card
+          title="title for card 1"
+          company="company 1"
+          description="description 1"
+          linkTo="/selectedclient"
+          image={Ad}
+        />
+        <Card
+          title="title for card 1"
+          company="company 1"
           description="description 1"
           linkTo="/selectedclient"
           image={Ad}
@@ -73,8 +89,13 @@ const Portfolio = () => {
           linkTo="/selectedclient"
           image={Ad}
         />
-        {/* <Link to="/selectedclient">
-          <Card /> */}
+        <Card
+          title="title for card 1"
+          company="company 1"
+          description="description 1"
+          linkTo="/selectedclient"
+          image={Ad}
+        />
       </div>
     </div>
   );
