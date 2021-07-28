@@ -1,22 +1,30 @@
 .card {
   height: auto;
 }
+
+.cardText {
+  padding: 0 12px 12px 12px;
+  color: #4a4a4a;
+}
+
 .cardTitle {
   color: #222222;
+  padding-bottom: 8px;
 }
 
 .cardCompany {
   color: #4a4a4a;
+  font-size: 14px;
 }
 
 .cardDescription {
-  color: #4a4a4a;
+  padding-bottom: 8px;
 }
 
 .cardButton {
   border: none;
   border-radius: 4px;
-  background: teal;
+  background: rgb(0, 105, 128);
   color: white;
   padding: 12px 24px 12px 24px;
   letter-spacing: 1.15px;
@@ -25,6 +33,7 @@
 .cardImage {
   width: 100%;
   object-fit: contain;
+  border-radius: 12px 12px 0px 0px;
 }
 
 /* .content > img:hover {
@@ -43,10 +52,18 @@
 
 @media (max-width: 767px) {
   .card {
-    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px -10px rgba(150, 170, 180, 0.5);
   }
   .cardText {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardButton {
+    /* justify-content: flex-end; */
   }
 }
 @media (max-width: 500px) {
