@@ -1,7 +1,4 @@
 import "./Portfolio.css";
-import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
-import CardList from "../Components/CardList";
 import Card from "../Components/Card/Card";
 import Ad from "../Components/Card/ad.png";
 
@@ -50,8 +47,6 @@ const Portfolio = () => {
       </div>
 
       <div className="gallery">
-        {/* <CardList cards={cards} /> */}
-        {/* <Card cards={cards}></Card> */}
         <Card
           title="title for card 1"
           company="company 1"
