@@ -1,13 +1,10 @@
 import React from "react";
 
-function SelectedClientImage() {
+function SelectedClient() {
   return (
     <div className="projectAbout">
       <div className="projectLogo">
-        <img
-          src="./LogoWholeFoods.png"
-          alt="Whole Foods Market logo 2017 custom text with leaf icon in a green circle"
-        />
+        <img src="./image.png" alt="alt tag text goes here" />
       </div>
       <div className="projectDescription">
         <h1>Customer Name</h1>
@@ -19,16 +16,13 @@ function SelectedClientImage() {
           mi, eget scelerisque nunc pretium ut. Aliquam erat volutpat.
           Pellentesque cursus malesuada mi ut tincidunt.
         </p>
-        <a
-          href="https://www.wholefoodsmarket.com/"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href="https://www.website.com/" rel="noreferrer" target="_blank">
           View Website
         </a>
       </div>
+      <div className="pictureGallery"></div>
     </div>
   );
 }
 
-export default SelectedClientImage;
+export default SelectedClient;
