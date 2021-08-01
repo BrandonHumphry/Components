@@ -1,4 +1,4 @@
-import React from "react";
+import SelectedClientImage from "./SelectedClientImage";
 
 function SelectedClient() {
   return (
@@ -20,7 +20,9 @@ function SelectedClient() {
           View Website
         </a>
       </div>
-      <div className="pictureGallery"></div>
+      <div className="pictureGallery">
+        <SelectedClientImage />
+      </div>
     </div>
   );
 }
