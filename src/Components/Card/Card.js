@@ -1,21 +1,5 @@
-import Ad from "./ad.png";
 import "./Card.css";
-import {
-  Route,
-  Link,
-  useLocation,
-  BrowserRouter as Router
-} from "react-router-dom";
-
-// const Card = ({
-//   cards,
-//   id,
-//   title,
-//   company,
-//   description,
-//   path,
-//   link,
-//   image
+import { Link } from "react-router-dom";
 
 const Card = props => {
   const { id, image, title, company, description, linkTo } = props;

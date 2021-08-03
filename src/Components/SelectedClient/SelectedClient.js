@@ -1,9 +1,10 @@
 import SelectedClientImage from "./SelectedClientImage";
 
-function SelectedClient() {
+const SelectedClient = props => {
+  const { id, image } = props;
   return (
-    <div className="projectAbout">
-      <div className="projectLogo">
+    <div className="projectAbout" key={id}>
+      <img className="projectLogo"image ={image}>
         <img src="./image.png" alt="alt tag text goes here" />
       </div>
       <div className="projectDescription">
@@ -21,10 +22,20 @@ function SelectedClient() {
         </a>
       </div>
       <div className="pictureGallery">
+
+    
+      projectImage={""}
+        clientName="title for card 1"
+        projectName="company 1"
+        projectDescription="Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit. Nulla lobortis sapien vel suscipit 
+      rutrum."
+        linkTo=
+
         <SelectedClientImage />
       </div>
     </div>
   );
-}
+};
 
 export default SelectedClient;
