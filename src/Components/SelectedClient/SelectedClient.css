@@ -1,5 +1,18 @@
+.clientImage {
+  width: 100%;
+  height: auto;
+}
+
+.clientAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1px) {
 }
+
 a {
   color: #2c4e54;
   padding-left: 9px;

@@ -1,25 +1,26 @@
-import "SelectedClient.css";
+import "./SelectedClient.css";
 import { Link } from "react-router-dom";
-import SelectedClientImage from "./SelectedClientImage";
+import SelectedClientImage from "../SelectedClientImage/SelectedClientImage";
 
 const SelectedClient = props => {
   const {
     id,
     image,
-    customername,
-    projectname,
-    projectdetails,
+    clientName,
+    projectName,
+    projectDescription,
     linkTo,
     siteName
   } = props;
   return (
-    <div className="projectAbout" key={id}>
-      <img className="projectLogo" image={image} />
+    <div className="clientAbout" key={id}>
+      <img className="clientLogo" alt="" src={image} />
+
       <div className="projectDescription">
-        <h1 className="CustomerName">{customername}</h1>
-        <h3 className="ProjectName">{projectname}</h3>
-        <p className="projectDetails">
-          {projectdetails}
+        <h1 className="clientName">{clientName}</h1>
+        <h3 className="projectName">{projectName}</h3>
+        <p className="projectDescription ">
+          {projectDescription}
           Project Description Sed ultricies nisi vitae metus consectetur
           molestie. Integer eu dolor nec tortor imperdiet semper. Integer a erat
           mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam cursus dui
@@ -33,10 +34,6 @@ const SelectedClient = props => {
       </div>
 
       <div className="pictureGallery">
-        projectImage={""}
-        clientName="title for card 1" projectName="company 1"
-        projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nulla lobortis sapien vel suscipit rutrum." linkTo=
         <SelectedClientImage />
       </div>
     </div>

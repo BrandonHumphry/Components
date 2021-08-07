@@ -7,11 +7,14 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
 import Footer from "./Components/Footer/Footer";
-import SelectedClient from "./pages/Portfolio/SelectedClient";
+
+import About from "./pages/About";
+
+import Portfolio from "./pages/Portfolio";
+import Client1 from "./pages/Clients/Client1/Client1";
+
+import Contact from "./pages/Contact";
 
 import "./App.css";
 
@@ -32,8 +35,8 @@ const App = () => {
               <Route path="/contact">
                 <Contact />
               </Route>
-              <Route path="/selectedclient">
-                <SelectedClient />
+              <Route path="/client1">
+                <Client1 />
               </Route>
               <Redirect to="/" />
             </Switch>
