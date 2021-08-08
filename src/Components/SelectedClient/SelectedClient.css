@@ -1,29 +1,3 @@
-.clientImage {
-  width: 100%;
-  height: auto;
-}
-
-.clientAbout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (min-width: 1px) {
-}
-
-a {
-  color: #2c4e54;
-  padding-left: 9px;
-  margin: 0 auto;
-}
-
-.inlineLink {
-  color: #2c4e54;
-  padding-left: 0;
-}
-
 body {
   background-color: #f2f2f3;
   margin: 0;
@@ -31,47 +5,40 @@ body {
   line-height: 1.65;
 }
 
-.projectAbout {
-  height: 100vh;
-  margin: 0 24px 0 24px;
+.liveSite {
+  color: black;
 }
 
-.projectAbout > h3 {
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0 !important;
+@media screen and (min-width: 1px) {
+  .selectedClient {
+    margin: 50px 16px 16px 16px;
+    text-align: left;
+  }
 }
+
+.clientImage {
+  width: 100%;
+  height: auto;
+}
+
+.projectDescription {
+  color: #4a4a4a;
+}
+
+@media screen and (min-width: 1px) {
+}
+/* 
+a {
+  color: #2c4e54;
+  padding-left: 9px;
+  margin: 0 auto;
+} */
 
 .projectAbout > a > .arrow {
   bottom: 44px;
   text-align: center;
   position: absolute;
   background-color: black;
-}
-
-.projectLogo {
-  padding: 90px 0px 75px 0px;
-}
-
-.projectLogo > img {
-  width: 130px;
-}
-
-.projectDescription {
-  align-self: flex-end;
-  justify-content: flex-start;
-  flex-direction: row;
-  text-align: left;
-}
-
-.projectDescription > h1 {
-  font-weight: 900;
-  margin-bottom: 0px;
-}
-
-.projectDescription > h3 {
-  margin-top: 0px;
-  color: #333;
 }
 
 .technologiesUsed {
@@ -118,17 +85,22 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .projectDescription {
+  .selectedClient {
+    height: 100vh;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    align-self: center; */
+  }
+  /* .projectDescription {
     max-width: 700px;
     text-align: center;
     margin: auto;
-  }
-
-  .projectLogo {
-    padding: 220px 0px 75px 0px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  } */
 
   .pictureGallery > p,
   .pictureGallery > h3,

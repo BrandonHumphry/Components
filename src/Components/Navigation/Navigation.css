@@ -15,6 +15,7 @@
 .navbar-links {
   display: flex;
 }
+
 .navbar-links ul {
   margin: 0;
   display: flex;

@@ -1,22 +1,14 @@
 import "./SelectedClient.css";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import SelectedClientImage from "../SelectedClientImage/SelectedClientImage";
 
 const SelectedClient = props => {
-  const {
-    id,
-    image,
-    clientName,
-    projectName,
-    projectDescription,
-    linkTo,
-    siteName
-  } = props;
+  const { id, image, clientName, projectName, projectDescription, prototype } =
+    props;
   return (
-    <div className="clientAbout" key={id}>
-      <img className="clientLogo" alt="" src={image} />
-
+    <div className="selectedClient" key={id}>
       <div className="projectDescription">
+        <img className="clientLogo" alt="" src={image} />
         <h1 className="clientName">{clientName}</h1>
         <h3 className="projectName">{projectName}</h3>
         <p className="projectDescription ">
@@ -27,10 +19,10 @@ const SelectedClient = props => {
           mi, eget scelerisque nunc pretium ut. Aliquam erat volutpat.
           Pellentesque cursus malesuada mi ut tincidunt.
         </p>
-        <Link to={linkTo}>{siteName}</Link>
-        {/* <a href="https://www.website.com/" rel="noreferrer" target="_blank">
-          View Website
-        </a> */}
+
+        <a target="_blank" rel="noreferrer" href={prototype}>
+          Figma prototype
+        </a>
       </div>
 
       <div className="pictureGallery">

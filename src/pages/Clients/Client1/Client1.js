@@ -1,17 +1,17 @@
 import SelectedClient from "../../../Components/SelectedClient/SelectedClient";
-import Ad from "../../../Components/Card/ad.png";
+import Icon from "./icon.png";
 
 function Client1() {
   return (
     <div>
       <SelectedClient
-        image={Ad}
-        clientName="title for card 1"
-        projectName="project 1"
+        image={Icon}
+        clientName="Client Name"
+        projectName="Project Name"
         projectDescription="Lorem ipsum dolor sit amet, consectetur 
       adipiscing elit. Nulla lobortis sapien vel suscipit 
       rutrum."
-        linkTo="/selectedclient"
+        prototype="https://www.google.com/"
       />
     </div>
   );
