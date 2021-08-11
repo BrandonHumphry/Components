@@ -16,8 +16,7 @@ const SelectedClient = props => {
           Project Description Sed ultricies nisi vitae metus consectetur
           molestie. Integer eu dolor nec tortor imperdiet semper. Integer a erat
           mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam cursus dui
-          mi, eget scelerisque nunc pretium ut. Aliquam erat volutpat.
-          Pellentesque cursus malesuada mi ut tincidunt.
+          mi, eget scelerisque nunc pretium ut.
         </p>
 
         <a target="_blank" rel="noreferrer" href={prototype}>
