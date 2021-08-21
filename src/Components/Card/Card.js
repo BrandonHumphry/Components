@@ -9,6 +9,7 @@ const Card = props => {
         <Link to={linkTo}>
           <img className="cardImage" src={image} alt="" />
         </Link>
+
         <div className="cardText">
           <h2 className="cardTitle">{title}</h2>
           <p className="cardCompany">{company}</p>
