@@ -12,14 +12,6 @@ function handleClick(event) {
 function Client1() {
   return (
     <div>
-      <Breadcrumbs aria-label="breadcrumb">
-        {/* <Link to="/portfolio" color="inherit" onClick={handleClick}>
-          Portfolio
-        </Link> */}
-
-        <Link to="/portfolio">Portfolio</Link>
-        <Typography color="textPrimary">Client Name</Typography>
-      </Breadcrumbs>
       <SelectedClient
         image={Icon}
         clientName="Client Name"

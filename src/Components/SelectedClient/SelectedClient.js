@@ -1,12 +1,18 @@
 import "./SelectedClient.css";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SelectedClientImage from "../SelectedClientImage/SelectedClientImage";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Typography from "@material-ui/core/Typography";
 
 const SelectedClient = props => {
   const { id, image, clientName, projectName, projectDescription, prototype } =
     props;
   return (
     <div className="selectedClient" key={id}>
+      <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
+        <Link to="/portfolio">Portfolio</Link>
+        <Typography color="textPrimary">Client Name</Typography>
+      </Breadcrumbs>
       <div className="projectDescription">
         <img className="clientLogo" alt="" src={image} />
         <h1 className="clientName">{clientName}</h1>
