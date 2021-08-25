@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SelectedClientImage from "../SelectedClientImage/SelectedClientImage";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Typography from "@material-ui/core/Typography";
+import NavigationProfile from "../NavigationProfile/NavigationProfile";
 
 const SelectedClient = props => {
   const { id, image, clientName, projectName, projectDescription, prototype } =
@@ -33,6 +34,7 @@ const SelectedClient = props => {
       <div className="pictureGallery">
         <SelectedClientImage />
       </div>
+      <NavigationProfile />
     </div>
   );
 };

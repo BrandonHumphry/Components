@@ -1,7 +1,5 @@
 import SelectedClient from "../../../Components/SelectedClient/SelectedClient";
 import Icon from "./icon.png";
-import Typography from "@material-ui/core/Typography";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { Link } from "react-router-dom";
 
 function handleClick(event) {
