@@ -22,27 +22,27 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <body>
-          <Navigation />
-          <main>
-            <Switch>
-              <Route path="/" exact>
-                <About />
-              </Route>
-              <Route path="/portfolio">
-                <Portfolio />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/client1">
-                <Client1 />
-              </Route>
-              <Redirect to="/" />
-            </Switch>
-          </main>
-          <Footer />
-        </body>
+        {/* <body> */}
+        <Navigation />
+        <main>
+          <Switch>
+            <Route path="/" exact>
+              <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/client1">
+              <Client1 />
+            </Route>
+            <Redirect to="/" />
+          </Switch>
+        </main>
+        <Footer />
+        {/* </body> */}
       </div>
     </Router>
   );

@@ -9,30 +9,32 @@ const SelectedClient = props => {
   const { id, image, clientName, projectName, projectDescription, prototype } =
     props;
   return (
-    <div className="selectedClient" key={id}>
-      <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
-        <Link to="/portfolio">Portfolio</Link>
-        <Typography color="textPrimary">Client Name</Typography>
-      </Breadcrumbs>
-      <div className="projectDescription">
-        <img className="clientLogo" alt="" src={image} />
-        <h1 className="clientName">{clientName}</h1>
-        <h3 className="projectName">{projectName}</h3>
-        <p className="projectDescription ">
-          {projectDescription}
-          Project Description Sed ultricies nisi vitae metus consectetur
-          molestie. Integer eu dolor nec tortor imperdiet semper. Integer a erat
-          mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam cursus dui
-          mi, eget scelerisque nunc pretium ut.
-        </p>
+    <div className="">
+      <div className="selectedClient" key={id}>
+        <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
+          <Link to="/portfolio">Portfolio</Link>
+          <Typography color="textPrimary">Client Name</Typography>
+        </Breadcrumbs>
+        <div className="projectDescription">
+          <img className="clientLogo" alt="" src={image} />
+          <h1 className="clientName">{clientName}</h1>
+          <h3 className="projectName">{projectName}</h3>
+          <p className="projectDescription ">
+            {projectDescription}
+            Project Description Sed ultricies nisi vitae metus consectetur
+            molestie. Integer eu dolor nec tortor imperdiet semper. Integer a
+            erat mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam
+            cursus dui mi, eget scelerisque nunc pretium ut.
+          </p>
 
-        <a target="_blank" rel="noreferrer" href={prototype}>
-          Figma prototype
-        </a>
-      </div>
+          <a target="_blank" rel="noreferrer" href={prototype}>
+            Figma prototype
+          </a>
+        </div>
 
-      <div className="pictureGallery">
-        <SelectedClientImage />
+        <div className="pictureGallery">
+          <SelectedClientImage />
+        </div>
       </div>
       <NavigationProfile />
     </div>

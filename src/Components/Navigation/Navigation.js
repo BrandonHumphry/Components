@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function Navigation() {
-  const [showLinks, setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(true);
 
   const overflow = () => {
     // const heightUl = document.querySelector(".navbar-links#hidden");
