@@ -3,18 +3,18 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function Navigation() {
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
 
-  const overflow = () => {
-    // const heightUl = document.querySelector(".navbar-links#hidden");
-    !showLinks
-      ? (document.body.style.overflow = "hidden")
-      : // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
-        // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
-        // (heightUl.style.opacity = "0")
-        (document.body.style.overflow = "auto");
-    // (document.querySelector(".navbar-links#hidden").style.height = "100vh");
-  };
+  // const overflow = () => {
+  //   // const heightUl = document.querySelector(".navbar-links#hidden");
+  //   !showLinks
+  //     ? (document.body.style.overflow = "auto")
+  //     : // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
+  //       // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
+  //       // (heightUl.style.opacity = "0")
+  //       (document.body.style.overflow = "hidden");
+  //   // (document.querySelector(".navbar-links#hidden").style.height = "100vh");
+  // };
 
   // const heightTransition = () => {
   //   const heightUl = document.querySelector(".navbar-links#hidden");
@@ -39,8 +39,8 @@ function Navigation() {
           id={showLinks ? "close" : ""}
           alt="open navigation menu"
           onClick={() => {
-            setShowLinks(!showLinks);
-            overflow();
+            showLinks ? setShowLinks(false) : setShowLinks(true);
+            // overflow();
             // heightTransition();
           }}
         />
@@ -52,8 +52,8 @@ function Navigation() {
                 exact
                 to="/"
                 onClick={() => {
-                  setShowLinks(!showLinks);
-                  overflow();
+                  setShowLinks();
+                  // overflow();
                 }}
                 activeClassName="selected"
               >
@@ -65,8 +65,8 @@ function Navigation() {
                 exact
                 to="/portfolio"
                 onClick={() => {
-                  setShowLinks(!showLinks);
-                  overflow();
+                  setShowLinks();
+                  // overflow();
                 }}
                 activeClassName="selected"
               >
@@ -78,8 +78,8 @@ function Navigation() {
                 exact
                 to="/contact"
                 onClick={() => {
-                  setShowLinks(!showLinks);
-                  overflow();
+                  setShowLinks();
+                  // overflow();
                 }}
                 activeClassName="selected"
               >
