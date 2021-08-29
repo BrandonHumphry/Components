@@ -8,11 +8,11 @@ function Navigation() {
   // const overflow = () => {
   //   // const heightUl = document.querySelector(".navbar-links#hidden");
   //   !showLinks
-  //     ? (document.body.style.overflow = "auto")
+  //     ? (document.body.style.overflow = "hidden")
   //     : // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
   //       // (document.querySelector(".navbar-links#hidden").style.opacity = "1")
   //       // (heightUl.style.opacity = "0")
-  //       (document.body.style.overflow = "hidden");
+  //       (document.body.style.overflow = "auto");
   //   // (document.querySelector(".navbar-links#hidden").style.height = "100vh");
   // };
 
@@ -39,7 +39,7 @@ function Navigation() {
           id={showLinks ? "close" : ""}
           alt="open navigation menu"
           onClick={() => {
-            showLinks ? setShowLinks(false) : setShowLinks(true);
+            setShowLinks(!showLinks);
             // overflow();
             // heightTransition();
           }}
@@ -52,7 +52,7 @@ function Navigation() {
                 exact
                 to="/"
                 onClick={() => {
-                  setShowLinks();
+                  setShowLinks(!showLinks);
                   // overflow();
                 }}
                 activeClassName="selected"
@@ -65,7 +65,7 @@ function Navigation() {
                 exact
                 to="/portfolio"
                 onClick={() => {
-                  setShowLinks();
+                  setShowLinks(!showLinks);
                   // overflow();
                 }}
                 activeClassName="selected"
@@ -78,7 +78,7 @@ function Navigation() {
                 exact
                 to="/contact"
                 onClick={() => {
-                  setShowLinks();
+                  setShowLinks(!showLinks);
                   // overflow();
                 }}
                 activeClassName="selected"
