@@ -9,12 +9,7 @@ const Footer = () => {
           <i className="icon-up-open"></i>
         </a>
       </div>
-      <section>
-        Created in{" "}
-        <a title="" href="">
-          2021
-        </a>
-      </section>
+      <section>studioeande 2021</section>
     </footer>
   );
 };

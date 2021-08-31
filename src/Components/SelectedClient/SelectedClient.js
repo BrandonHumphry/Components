@@ -34,6 +34,7 @@ const SelectedClient = props => {
       <div className="pictureGallery">
         <SelectedClientImage />
       </div>
+
       <NavigationProfile />
     </div>
   );
