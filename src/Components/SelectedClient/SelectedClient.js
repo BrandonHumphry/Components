@@ -30,11 +30,6 @@ const SelectedClient = props => {
           Figma prototype
         </a>
       </div>
-
-      <div className="pictureGallery">
-        <SelectedClientImage />
-      </div>
-
       <NavigationProfile />
     </div>
   );
