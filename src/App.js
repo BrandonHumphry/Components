@@ -40,7 +40,7 @@ const App = () => {
               </Route>
               <Redirect to="/" />
             </Switch>
-          </main>
+          </main>{" "}
           <Footer />
         </body>
       </div>
