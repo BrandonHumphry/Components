@@ -1,7 +1,7 @@
-import NavigationProfile from "../../../Components/NavigationProfile/NavigationProfile";
 import SelectedClient from "../../../Components/SelectedClient/SelectedClient";
 import SelectedClientImage from "../../../Components/SelectedClientImage/SelectedClientImage";
 import Icon from "./icon.png";
+import FooterPortfolio from "../../../Components/Footer/FooterPortfolio";
 
 const Client1 = () => {
   return (
@@ -62,6 +62,7 @@ const Client1 = () => {
           mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam cursus dui
           mi, eget scelerisque nunc pretium ut"
         />
+        <FooterPortfolio />
       </div>
     </div>
   );
