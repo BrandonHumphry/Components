@@ -8,10 +8,9 @@ const Footer = () => {
         <div className="portfolio">
           <Link to="/portfolio">Portfolio</Link>
         </div>
-
         <div className="portfolioPages">
           <Link to="/client1">Client 1</Link>
-          <Link to="/client1">Client 2</Link>
+          <Link to="/client2">Client 2</Link>
           <Link to="/client1">Client 3</Link>
           <Link to="/client1">Client 4</Link>
           <Link to="/client1">Client 5</Link>
