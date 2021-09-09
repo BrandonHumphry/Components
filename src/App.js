@@ -32,17 +32,18 @@ const App = () => {
               </Route>
               <Route path="/portfolio">
                 <Portfolio />
+                <Footer />
               </Route>
               <Route path="/contact">
                 <Contact />
               </Route>
               <Route path="/client1">
                 <Client1 />
+                <FooterPortfolio />
               </Route>
               <Redirect to="/" />
             </Switch>
           </main>{" "}
-          <Footer />
         </body>
       </div>
     </Router>

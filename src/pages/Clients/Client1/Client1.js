@@ -62,7 +62,6 @@ const Client1 = () => {
           mauris. Donec ac dignissim nisl. Suspendisse potenti. Nam cursus dui
           mi, eget scelerisque nunc pretium ut"
         />
-        <FooterPortfolio />
       </div>
     </div>
   );

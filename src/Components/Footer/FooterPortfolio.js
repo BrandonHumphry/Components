@@ -3,7 +3,7 @@ import "./FooterStyle.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="NavigationProfile">
         <div className="portfolio">
           <Link to="/portfolio">Portfolio</Link>
@@ -17,7 +17,15 @@ const Footer = () => {
           <Link to="/client1">Client 6</Link>
         </div>
       </div>
-    </div>
+
+      <div id="toTop">
+        <a className="smoothscroll" title="Back to Top" href="#home">
+          {/* how to make this dynamic so the scroll goes back up to the first div on each page */}
+          <i className="icon-up-open"></i>
+        </a>
+      </div>
+      <section>studioeande 2021</section>
+    </footer>
   );
 };
 
