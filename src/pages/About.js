@@ -1,4 +1,4 @@
-import React from "react";
+import PageStructure from "../Components/PageStructure/PageStructure";
 
 const About = ({ data }) => {
   if (data) {
@@ -16,6 +16,7 @@ const About = ({ data }) => {
 
   return (
     <section id="about">
+      <PageStructure pageTitle="Home" pageDescription="this is the home page" />
       <div className="row">
         <div className="three columns">
           <img className="profile-pic" src={profilepic} alt="Profile Pic" />

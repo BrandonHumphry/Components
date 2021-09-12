@@ -13,7 +13,7 @@ import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 import About from "./pages/About";
 
 import Portfolio from "./pages/Portfolio";
-import Client1 from "./pages/Clients/Client1/Client1";
+import Client1 from "./pages/PortfolioClients/Client1/Client1";
 
 import Contact from "./pages/Contact";
 
