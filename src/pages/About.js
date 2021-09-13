@@ -15,50 +15,19 @@ const About = ({ data }) => {
   }
 
   return (
-    <section id="about">
-      <PageStructure pageTitle="Home" pageDescription="this is the home page" />
-      <div className="row">
-        <div className="three columns">
-          <img className="profile-pic" src={profilepic} alt="Profile Pic" />
-        </div>
-        <div className="nine columns main-col">
-          <h2>About Me</h2>
-
-          <p>
-            {bio}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Esta
-            pellentesque elit ullamcorper dignissim cras. Penatibus et magnis
-            dis parturient montes. Amet est placerat in egestas erat. Varius
-            duis at consectetur lorem donec massa sapien faucibus et. Facilisis
-            volutpat est velit egestas dui.<br></br>
-          </p>
-          <p>
-            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
-            Penatibus et magnis dis parturient montes. Amet est placerat in
-            egestas erat. Varius duis at consectetur.<br></br>
-          </p>
-          <p>
-            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
-            Penatibus et magnis dis parturient montes. Amet est placerat in
-            egestas erat. Varius duis at consectetur.<br></br>
-          </p>
-          <p>
-            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
-            Penatibus et magnis dis parturient montes. Amet est placerat in
-            egestas erat. Varius duis at consectetur.<br></br>
-          </p>
-          <p>
-            Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Esta pellentesque elit ullamcorper dignissim cras.
-            Penatibus et magnis dis parturient montes. Amet est placerat in
-            egestas erat. Varius duis at consectetur.<br></br>
-          </p>
-        </div>
-      </div>
-    </section>
+    <div id="about">
+      <PageStructure
+        pageTitle="Home"
+        pageDescription="Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+                        sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+                        recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
+      />
+    </div>
   );
 };
 

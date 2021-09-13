@@ -1,7 +1,6 @@
 import "./Portfolio.css";
 import Card from "../Components/Card/Card";
 import Ad from "../Components/Card/ad.png";
-import PageStructure from "../Components/PageStructure/PageStructure";
 
 const Portfolio = () => {
   return (
