@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PageStructure from "../Components/PageStructure/PageStructure";
 import "./Contact.css";
 
 const Contact = ({ data }) => {
@@ -29,29 +30,22 @@ const Contact = ({ data }) => {
   };
 
   return (
-    <div className="contactbackground">
-      <div className="contact-container">
-        <h1> I'm a talker</h1>
-        <p id="thankful">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
-          aliquet turpis, at imperdiet orci. Pellentesque semper erat nisl, ut
-          ultrices lectus efficitur ut. Pellentesque faucibus tellus tristique
-          magna volutpat vestibulum. Fusce id purus malesuada, volutpat libero
-          nec, cursus lorem. Suspendisse mollis ante at elit malesuada, sit amet
-          dignissim ex lobortis. Curabitur rhoncus nulla sed lorem volutpat, id
-          ullamcorper nunc ullamcorper.
-        </p>
-
-        <div className="alignbuttons">
-          <a
-            id="button"
-            className="buttons"
-            href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
-            target="_top"
-          >
-            E - mail Me
-          </a>
-        </div>
+    <div>
+      <PageStructure
+        pageTitle="Contact"
+        pageDescription="Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure e\adipisci amet laborum. Perspiciatis 
+                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
+      />
+      <div className="alignbuttons">
+        <a
+          id="button"
+          className="buttons"
+          href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
+          target="_top"
+        >
+          E - mail Me
+        </a>
       </div>
     </div>
   );
