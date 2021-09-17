@@ -16,11 +16,9 @@
   }
 
   .alignbuttons {
-    margin-left: auto;
-    margin-right: auto;
-    /* justify-content: flex-end;
-      align-self: flex-end; */
-    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .buttons {
