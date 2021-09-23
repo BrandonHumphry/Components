@@ -1,37 +1,32 @@
 @media (min-width: 1px) {
-  .pageStructure {
-    margin-bottom: 48px;
-  }
   .pageTitle {
     margin: 60px 16px 0 16px;
   }
   .pageDescription {
-    margin: 0px 16px 16px 16px;
+    padding: 0px 16px 16px 16px;
   }
 }
 
 @media (min-width: 500px) {
-  .pageStructure {
-    margin-bottom: 960px;
-  }
   .pageTitle {
     margin: 60px 32px 0px 32px;
   }
   .pageDescription {
-    margin: 0 32px 16px 32px;
+    padding: 0 32px 32px 32px;
   }
 }
 
 @media (min-width: 768px) {
   .pageStructure {
-    margin-bottom: 960px;
+    margin-bottom: 960px !important;
   }
   .pageTitle {
     text-align: center;
   }
   .pageDescription {
     text-align: center;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
+    padding: 0 32px 16px 32px;
   }
 }
