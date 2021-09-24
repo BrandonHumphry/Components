@@ -29,6 +29,7 @@ const SelectedClient = props => {
           Figma prototype
         </a>
       </div>
+      <img src="./Navigation/navOpen.png" alt="" className="scrollDown" />
     </div>
   );
 };
