@@ -7,6 +7,26 @@ import Typography from "@material-ui/core/Typography";
 const SelectedClient = props => {
   const { id, image, clientName, projectName, projectDescription, prototype } =
     props;
+
+  const scrolldown = () => {
+    document.querySelector(".next-section").each(function () {
+      document.querySelector(this).addEventListener("click", function () {
+        //find the button's parent, in this case it is the section wrapper #about
+        var nextSection = document
+          .querySelector(this)
+          .parent().nextElementSibling;
+        //animate to the next section, edit the offset and time
+        // note: having an offset can be handy, especially if you have fixed elements that depend on these scroll bahaviours. I'll leave it up to you to decide if you need an offset or not. Feel free to delete the 1 pixel altogether, you are the captain your own ship!
+        document.querySelector("html, body").animate(
+          {
+            scrollTop: nextSection.offset().top + 1
+          },
+          1000
+        );
+      });
+    });
+  };
+
   return (
     <div className="selectedClient" key={id}>
       <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
@@ -29,7 +49,12 @@ const SelectedClient = props => {
           Figma prototype
         </a>
       </div>
-      <img src="./Navigation/navOpen.png" alt="" className="scrollDown" />
+      <img
+        src="./Navigation/navOpen.png"
+        alt=""
+        className="scrollDown"
+        onClick={scrolldown}
+      />
     </div>
   );
 };
