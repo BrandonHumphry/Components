@@ -9,14 +9,10 @@ const SelectedClient = props => {
     props;
 
   const scrolldown = () => {
-    document.querySelector(".next-section").each(function () {
-      document.querySelector(this).addEventListener("click", function () {
-        //find the button's parent, in this case it is the section wrapper #about
-        var nextSection = document
-          .querySelector(this)
-          .parent().nextElementSibling;
-        //animate to the next section, edit the offset and time
-        // note: having an offset can be handy, especially if you have fixed elements that depend on these scroll bahaviours. I'll leave it up to you to decide if you need an offset or not. Feel free to delete the 1 pixel altogether, you are the captain your own ship!
+    document.getElementsByClassName("next-section").each(function () {
+      this.addEventListener("click", e => {
+        let nextSection = this.parent().nextElementSibling;
+
         document.querySelector("html, body").animate(
           {
             scrollTop: nextSection.offset().top + 1
@@ -49,12 +45,44 @@ const SelectedClient = props => {
           Figma prototype
         </a>
       </div>
-      <img
-        src="./Navigation/navOpen.png"
-        alt=""
-        className="scrollDown"
-        onClick={scrolldown}
-      />
+      <img src="./Navigation/navOpen.png" alt="" className="scrollDown" />
+      <section id="about">
+        Proin eget lobortis sapien. Sed et rhoncus nisi, ut sagittis ipsum.
+        Suspendisse est enim, sagittis nec aliquet non, hendrerit ac leo. Ut
+        tristique erat ut nulla ultrices ultrices. Maecenas ipsum nisl,
+        hendrerit a velit in, fermentum vulputate quam. Sed risus quam, congue
+        nec mi a, ullamcorper auctor justo. Duis tincidunt facilisis ante
+        pharetra mollis. Fusce luctus sed nunc ut scelerisque. Pellentesque arcu
+        erat, tincidunt at odio non, consectetur elementum elit. Phasellus
+        imperdiet leo libero, in hendrerit ex blandit in. Maecenas quis nunc
+        tristique, finibus enim ut, sagittis tortor. Pellentesque condimentum,
+        augue a varius varius, enim massa facilisis ex, rhoncus mattis libero
+        ante eu nibh. Etiam volutpat ullamcorper fermentum. Nam iaculis nisi
+        dui. Nullam dictum lacus ex, a dictum massa mattis in. Donec ut congue
+        leo. Ut scelerisque lectus ut gravida tempus.
+        <button class="next-section" onClick={scrolldown}>
+          scroll next
+        </button>
+      </section>
+
+      <section id="info">
+        Proin eget lobortis sapien. Sed et rhoncus nisi, ut sagittis ipsum.
+        Suspendisse est enim, sagittis nec aliquet non, hendrerit ac leo. Ut
+        tristique erat ut nulla ultrices ultrices. Maecenas ipsum nisl,
+        hendrerit a velit in, fermentum vulputate quam. Sed risus quam, congue
+        nec mi a, ullamcorper auctor justo. Duis tincidunt facilisis ante
+        pharetra mollis. Fusce luctus sed nunc ut scelerisque. Pellentesque arcu
+        erat, tincidunt at odio non, consectetur elementum elit. Phasellus
+        imperdiet leo libero, in hendrerit ex blandit in. Maecenas quis nunc
+        tristique, finibus enim ut, sagittis tortor. Pellentesque condimentum,
+        augue a varius varius, enim massa facilisis ex, rhoncus mattis libero
+        ante eu nibh. Etiam volutpat ullamcorper fermentum. Nam iaculis nisi
+        dui. Nullam dictum lacus ex, a dictum massa mattis in. Donec ut congue
+        leo. Ut scelerisque lectus ut gravida tempus.
+        <button class="next-section" onClick={scrolldown}>
+          scroll next{" "}
+        </button>
+      </section>
     </div>
   );
 };
