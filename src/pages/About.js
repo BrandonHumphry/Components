@@ -1,21 +1,12 @@
 import PageStructure from "../Components/PageStructure/PageStructure";
 
-const About = ({ data }) => {
-  if (data) {
-    var name = data.name;
-    var profilepic = "images/" + data.image;
-    var bio = data.bio;
-    var street = data.address.street;
-    var city = data.address.city;
-    var state = data.address.state;
-    var zip = data.address.zip;
-    var phone = data.phone;
-    var email = data.email;
-    var resumeDownload = data.resumedownload;
-  }
-
+const About = () => {
   return (
     <div id="about">
+      <img
+        src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+        alt="placeholder"
+      />
       <PageStructure
         pageTitle="Home"
         pageDescription="Provident similique accusantium nemo autem. Veritatis

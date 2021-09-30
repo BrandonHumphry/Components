@@ -8,20 +8,20 @@ const SelectedClient = props => {
   const { id, image, clientName, projectName, projectDescription, prototype } =
     props;
 
-  const scrolldown = () => {
-    document.getElementsByClassName("next-section").each(function () {
-      this.addEventListener("click", e => {
-        let nextSection = this.parent().nextElementSibling;
+  // const scrolldown = () => {
+  //   document.getElementsByClassName("next-section").each(function () {
+  //     this.addEventListener("click", e => {
+  //       let nextSection = this.parent().nextElementSibling;
 
-        document.querySelector("html, body").animate(
-          {
-            scrollTop: nextSection.offset().top + 1
-          },
-          1000
-        );
-      });
-    });
-  };
+  //       document.querySelector("html, body").animate(
+  //         {
+  //           scrollTop: nextSection.offset().top + 1
+  //         },
+  //         1000
+  //       );
+  //     });
+  //   });
+  // };
 
   return (
     <div className="selectedClient" key={id}>
@@ -60,9 +60,7 @@ const SelectedClient = props => {
         ante eu nibh. Etiam volutpat ullamcorper fermentum. Nam iaculis nisi
         dui. Nullam dictum lacus ex, a dictum massa mattis in. Donec ut congue
         leo. Ut scelerisque lectus ut gravida tempus.
-        <button class="next-section" onClick={scrolldown}>
-          scroll next
-        </button>
+        <button class="next-section">scroll next</button>
       </section>
 
       <section id="info">
@@ -79,9 +77,7 @@ const SelectedClient = props => {
         ante eu nibh. Etiam volutpat ullamcorper fermentum. Nam iaculis nisi
         dui. Nullam dictum lacus ex, a dictum massa mattis in. Donec ut congue
         leo. Ut scelerisque lectus ut gravida tempus.
-        <button class="next-section" onClick={scrolldown}>
-          scroll next{" "}
-        </button>
+        <button class="next-section">scroll next </button>
       </section>
     </div>
   );
