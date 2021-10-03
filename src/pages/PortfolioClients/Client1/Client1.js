@@ -2,6 +2,7 @@ import SelectedClient from "../../../Components/SelectedClient/SelectedClient";
 import SelectedClientImage from "../../../Components/SelectedClientImage/SelectedClientImage";
 import Icon from "./icon.png";
 import FooterPortfolio from "../../../Components/Footer/FooterPortfolio";
+import "../../../Components/Images/Images.css";
 
 const Client1 = () => {
   return (
@@ -17,6 +18,11 @@ const Client1 = () => {
       />
 
       <div className="pictureGallery">
+        <img
+          className="ClientImage"
+          src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+          alt="placeholder"
+        />
         <SelectedClientImage
           image="./"
           alt=""

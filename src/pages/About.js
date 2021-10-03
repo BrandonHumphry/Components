@@ -1,9 +1,11 @@
 import PageStructure from "../Components/PageStructure/PageStructure";
+import "../Components/Images/Images.css";
 
 const About = () => {
   return (
     <div id="about">
       <img
+        className="FullScreen"
         src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
         alt="placeholder"
       />
