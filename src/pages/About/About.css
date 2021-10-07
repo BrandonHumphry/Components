@@ -1,0 +1,23 @@
+@media (min-width: 1px) {
+  .About {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 {
+    height: 100vh;
+    background: linear-gradient(
+      rgb(94, 108, 126),
+      rgb(146, 160, 169),
+      rgb(217, 177, 146)
+    );
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0 0 0 20px white;
+  }
+  .section1 > a {
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    bottom: 44px;
+  }
+}

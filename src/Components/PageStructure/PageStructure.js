@@ -3,7 +3,7 @@ import "./PageStructure.css";
 const PageStructure = props => {
   const { pageTitle, pageDescription, id } = props;
   return (
-    <div className="PageStructure" id={id}>
+    <div className="pageStructure" id={id}>
       <h1 className="pageTitle">{pageTitle}</h1>
       <p className="pageDescription ">{pageDescription}</p>
       {/* <Footer /> */}

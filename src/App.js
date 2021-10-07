@@ -10,12 +10,12 @@ import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 
-import About from "./pages/About";
+import About from "./Pages/About/About";
 
-import Portfolio from "./pages/Portfolio";
-import Client1 from "./pages/PortfolioClients/Client1/Client1";
+import Portfolio from "./Pages/Portfolio";
+import Client1 from "./Pages/PortfolioClients/Client1/Client1";
 
-import Contact from "./pages/Contact";
+import Contact from "./Pages/Contact";
 
 import "./App.css";
 
