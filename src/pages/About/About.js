@@ -2,23 +2,24 @@ import "./About.css";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import { HashLink as Link } from "react-router-hash-link";
+import chevronDown from "./chevronDown.png";
 
 const About = () => {
   return (
     <div className="About">
       <div className="section1">
         <div className="bounce"></div>
-        <img src="./chevronDown.png" alt="" />
+        {/* <img src="./chevronDown.png" alt="" /> */}
         <a href="/#section2">
-          <img src="./chevronDown.png" alt="click to next section" />
+          <img src={chevronDown} alt="click to next section" />
         </a>
-        <Link to="/#section2">
-          {/* <img
+        {/* <Link to="/#section2"> */}
+        {/* <img
             className="FullScreen"
             src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
             alt="placeholder"
           /> */}
-        </Link>
+        {/* </Link> */}
       </div>
       <div id="section2">
         <PageStructure
@@ -34,6 +35,8 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
+      <Link to="/portfolio"></Link>
+      <Link to="/contact"></Link>
     </div>
   );
 };
