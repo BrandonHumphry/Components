@@ -35,8 +35,13 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
-      <Link to="/portfolio"></Link>
-      <Link to="/contact"></Link>
+      <button>
+        <Link to="/portfolio">Portfolio</Link>
+      </button>
+      <button>
+        {" "}
+        <Link to="/contact">Contact</Link>
+      </button>
     </div>
   );
 };

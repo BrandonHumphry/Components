@@ -15,7 +15,7 @@ import About from "./Pages/About/About";
 import Portfolio from "./Pages/Portfolio";
 import Client1 from "./Pages/PortfolioClients/Client1/Client1";
 
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/Contact/Contact";
 
 import "./App.css";
 
@@ -29,19 +29,20 @@ const App = () => {
               <Route path="/" exact>
                 <About />
               </Route>
-            </Switch>
-            <Switch>
-              <Navigation />
               <Route path="/portfolio">
+                <Navigation />
                 <Portfolio />
                 <Footer />
+                <Route path="/client1">
+                  <Navigation />
+                  <Client1 />
+                  <FooterPortfolio />
+                </Route>
               </Route>
               <Route path="/contact">
+                <Navigation />
                 <Contact />
-              </Route>
-              <Route path="/client1">
-                <Client1 />
-                <FooterPortfolio />
+                <Footer />
               </Route>
               <Redirect to="/" />
             </Switch>

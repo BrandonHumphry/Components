@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PageStructure from "../Components/PageStructure/PageStructure";
+import PageStructure from "../../Components/PageStructure/PageStructure";
 import "./Contact.css";
 
 const Contact = ({ data }) => {
