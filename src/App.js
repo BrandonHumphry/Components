@@ -12,7 +12,7 @@ import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 
 import About from "./Pages/About/About";
 
-import Portfolio from "./Pages/Portfolio";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 import Client1 from "./Pages/PortfolioClients/Client1/Client1";
 
 import Contact from "./Pages/Contact/Contact";
@@ -33,11 +33,11 @@ const App = () => {
                 <Navigation />
                 <Portfolio />
                 <Footer />
-                <Route path="/client1">
-                  <Navigation />
-                  <Client1 />
-                  <FooterPortfolio />
-                </Route>
+              </Route>
+              <Route path="/client1">
+                <Navigation />
+                <Client1 />
+                <FooterPortfolio />
               </Route>
               <Route path="/contact">
                 <Navigation />
@@ -46,7 +46,7 @@ const App = () => {
               </Route>
               <Redirect to="/" />
             </Switch>
-          </main>{" "}
+          </main>
         </body>
       </div>
     </Router>
