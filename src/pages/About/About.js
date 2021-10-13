@@ -3,6 +3,7 @@ import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import { HashLink as Link } from "react-router-hash-link";
 import chevronDown from "./chevronDown.png";
+import Button from "../../Components/Button/Button";
 
 const About = () => {
   return (
@@ -35,11 +36,8 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
+      <Button CTA={"Portfolio"} Link to="/portfolio"></Button>
       <button>
-        <Link to="/portfolio">Portfolio</Link>
-      </button>
-      <button>
-        {" "}
         <Link to="/contact">Contact</Link>
       </button>
     </div>
