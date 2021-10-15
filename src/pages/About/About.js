@@ -36,7 +36,9 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
-      <Button CTA={"Portfolio"} Link to="/portfolio"></Button>
+      <Button CTA={"Portfolio"} Link to="/portfolio">
+        Portfolio
+      </Button>
       <button>
         <Link to="/contact">Contact</Link>
       </button>
