@@ -36,12 +36,25 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
-      <Button CTA={"Portfolio"} Link to="/portfolio">
+      <Button
+        onClick={() => {
+          console.log("you clicked me");
+        }}
+        type="button"
+        buttonStyle="btn--primary--outline"
+        buttonSize="btn--small"
+      >
         Portfolio
       </Button>
-      <button>
-        <Link to="/contact">Contact</Link>
-      </button>
+
+      <Link
+        to="/contact"
+        type="button"
+        buttonStyle="btn--primary--outline"
+        buttonSize="btn--small"
+      >
+        Contact
+      </Link>
     </div>
   );
 };
