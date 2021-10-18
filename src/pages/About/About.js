@@ -46,15 +46,11 @@ const About = () => {
       >
         Portfolio
       </Button>
-
-      <Link
-        to="/contact"
-        type="button"
-        buttonStyle="btn--primary--outline"
-        buttonSize="btn--small"
-      >
-        Contact
-      </Link>
+      <div className="button">
+        <Link to="/contact" className="button btn--primary--solid btn--large">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 };
