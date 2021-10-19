@@ -36,7 +36,7 @@ const About = () => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
         />
       </div>
-      <Button
+      {/* <Button
         onClick={() => {
           console.log("you clicked me");
         }}
@@ -45,9 +45,13 @@ const About = () => {
         buttonSize="btn--small"
       >
         Portfolio
-      </Button>
-      <div className="button">
-        <Link to="/contact" className="button btn--primary--solid btn--large">
+      </Button> */}
+      <div className="buttonSection">
+        <Link to="/portfolio" className="btn btn--primary--solid btn--large">
+          Portfolio
+        </Link>
+
+        <Link to="/contact" className="btn btn--primary--solid btn--large">
           Contact
         </Link>
       </div>

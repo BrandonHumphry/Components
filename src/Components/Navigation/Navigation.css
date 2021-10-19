@@ -25,6 +25,7 @@
   color: white;
   padding: 1rem;
   display: block;
+  text-decoration: none;
 }
 .toggle-button .bar {
   height: 3px;

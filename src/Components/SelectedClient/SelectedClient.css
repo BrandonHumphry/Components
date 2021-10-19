@@ -9,9 +9,9 @@ body {
   color: black;
 }
 
-a {
+/* a {
   color: #1d6367;
-}
+} */
 
 @media screen and (min-width: 1px) and (max-width: 539px) {
   .selectedClient {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "./Contact.css";
+import Button from "../../Components/Button/Button";
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");
@@ -37,10 +38,9 @@ const Contact = ({ data }) => {
                         obcaecati tenetur iure e\adipisci amet laborum. Perspiciatis 
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
       />
-      <div className="alignbuttons">
+      <div className="buttonSection">
         <a
-          id="button"
-          className="buttons"
+          className="btn btn--primary--solid btn--medium"
           href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
           target="_top"
         >
