@@ -1,8 +1,9 @@
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navigation() {
+  const [show, handleShow] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
 
   // const overflow = () => {
@@ -29,10 +30,20 @@ function Navigation() {
   //       (heightTransition.style.height = "0")
   //     : (heightTransition.style.height = "100%");
   // };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
 
   return (
     <div>
-      <nav className="navbar">
+      <nav className={`"navbar" ${show && "nav_black"}`}>
         <div className="logo" alt="logo"></div>
         <div
           className="brand-title"
