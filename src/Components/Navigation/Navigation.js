@@ -42,65 +42,63 @@ function Navigation() {
   }, []);
 
   return (
-    <div>
-      <nav className={`"navbar" ${show && "nav_black"}`}>
-        <div className="logo" alt="logo"></div>
-        <div
-          className="brand-title"
-          id={showLinks ? "close" : ""}
-          alt="open navigation menu"
-          onClick={() => {
-            setShowLinks(!showLinks);
-            // overflow();
-            // heightTransition();
-          }}
-        />
+    <nav className={`navbar ${show && "nav_black"}`}>
+      <div className="logo" alt="logo"></div>
+      <div
+        className="brand-title"
+        id={showLinks ? "close" : ""}
+        alt="open navigation menu"
+        onClick={() => {
+          setShowLinks(!showLinks);
+          // overflow();
+          // heightTransition();
+        }}
+      />
 
-        <div className="navbar-links" id={showLinks ? "hidden" : ""}>
-          <ul>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                onClick={() => {
-                  setShowLinks(!showLinks);
-                  // overflow();
-                }}
-                activeClassName="selected"
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/portfolio"
-                onClick={() => {
-                  setShowLinks(!showLinks);
-                  // overflow();
-                }}
-                activeClassName="selected"
-              >
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/contact"
-                onClick={() => {
-                  setShowLinks(!showLinks);
-                  // overflow();
-                }}
-                activeClassName="selected"
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <div className="navbar-links" id={showLinks ? "hidden" : ""}>
+        <ul>
+          <li>
+            <NavLink
+              exact
+              to="/"
+              onClick={() => {
+                setShowLinks(!showLinks);
+                // overflow();
+              }}
+              activeClassName="selected"
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              exact
+              to="/portfolio"
+              onClick={() => {
+                setShowLinks(!showLinks);
+                // overflow();
+              }}
+              activeClassName="selected"
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              exact
+              to="/contact"
+              onClick={() => {
+                setShowLinks(!showLinks);
+                // overflow();
+              }}
+              activeClassName="selected"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

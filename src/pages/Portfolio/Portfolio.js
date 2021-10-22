@@ -5,11 +5,11 @@ import Ad from "../../Components/Card/ad.png";
 const Portfolio = () => {
   return (
     <div>
-      <div className="tabs">
+      {/* <div className="tabs">
         <li>UX Design</li>
         <li>Development</li>
         <li>Illustration</li>
-      </div>
+      </div> */}
 
       <div className="gallery">
         <Card
