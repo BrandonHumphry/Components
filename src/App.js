@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
+import Navigation_hideShow from "./Components/Navigation/Navigation_hideShow";
 import Footer from "./Components/Footer/Footer";
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 
@@ -27,6 +28,7 @@ const App = () => {
           <main>
             <Switch>
               <Route path="/" exact>
+                <Navigation_hideShow />
                 <About />
               </Route>
               <Route path="/portfolio">

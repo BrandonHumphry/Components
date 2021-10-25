@@ -1,0 +1,116 @@
+.navbar {
+  height: 30px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_background {
+  background-color: whitesmoke;
+  opacity: 100;
+}
+
+.logo {
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+}
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links ul {
+  margin: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+}
+.brand-title {
+  display: none;
+}
+.selected {
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    position: fixed;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  .brand-title {
+    display: flex;
+    background-image: url("./navOpen.png");
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+  }
+  .brand-title#close {
+    background-image: url("./navClose.png");
+    background-color: whitesmoke;
+  }
+  .navbar-links {
+    display: none;
+    height: 0px;
+  }
+  .navbar-links#hidden {
+    position: absolute;
+    left: 0px;
+    top: 39px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    background-color: whitesmoke;
+    position: fixed;
+    /* opacity: 0; */
+    transition: opacity 2s;
+    transition-property: height;
+    transition-duration: 1.4s;
+    /* transition-timing-function: linear; */
+    transition-timing-function: ease-in-out;
+  }
+  .navbar-links > ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navbar-links li {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+}
