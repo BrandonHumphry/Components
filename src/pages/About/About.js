@@ -1,9 +1,7 @@
 import "./About.css";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
-import { HashLink as Link } from "react-router-hash-link";
 import chevronDown from "./chevronDown.png";
-import Button from "../../Components/Button/Button";
 
 const About = () => {
   return (
@@ -46,7 +44,7 @@ const About = () => {
       >
         Portfolio
       </Button> */}
-      <div className="buttonSection">
+      {/* <div className="buttonSection">
         <Link to="/portfolio" className="btn btn--primary--solid btn--large">
           Portfolio
         </Link>
@@ -54,7 +52,7 @@ const About = () => {
         <Link to="/contact" className="btn btn--primary--solid btn--large">
           Contact
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
