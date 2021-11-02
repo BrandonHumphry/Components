@@ -1,7 +1,6 @@
 import { useState } from "react";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "./Contact.css";
-import Button from "../../Components/Button/Button";
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");

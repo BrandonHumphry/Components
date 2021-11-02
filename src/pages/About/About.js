@@ -2,6 +2,7 @@ import "./About.css";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import chevronDown from "./chevronDown.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const About = () => {
   return (
@@ -24,35 +25,17 @@ const About = () => {
         <PageStructure
           id="intro"
           pageTitle="Home"
-          pageDescription="Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-                        sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-                        recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
+          pageDescription="Provident similique
+        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
+        molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
+        officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
+        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
+        error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
+        modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
+        error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
+        dolorem! Officiis iure rerum voluptates a cumque veli"<Link></Link>
         />
       </div>
-      {/* <Button
-        onClick={() => {
-          console.log("you clicked me");
-        }}
-        type="button"
-        buttonStyle="btn--primary--outline"
-        buttonSize="btn--small"
-      >
-        Portfolio
-      </Button> */}
-      {/* <div className="buttonSection">
-        <Link to="/portfolio" className="btn btn--primary--solid btn--large">
-          Portfolio
-        </Link>
-
-        <Link to="/contact" className="btn btn--primary--solid btn--large">
-          Contact
-        </Link>
-      </div> */}
     </div>
   );
 };
