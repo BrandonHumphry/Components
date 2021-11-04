@@ -33,8 +33,10 @@ const About = () => {
         error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
         modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
         error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
-        dolorem! Officiis iure rerum voluptates a cumque veli"<Link></Link>
-        />
+        dolorem! Officiis iure rerum voluptates a cumque veli"
+        >
+          <Link to="/client1">Client 1</Link>
+        </PageStructure>
       </div>
     </div>
   );

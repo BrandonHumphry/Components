@@ -24,26 +24,22 @@ const App = () => {
     <Router>
       <div className="App">
         <body>
+          <Navigation />
+          <Footer />
           <main>
             <Switch>
               <Route path="/" exact>
-                <Navigation />
                 <About />
               </Route>
               <Route path="/portfolio">
-                <Navigation />
                 <Portfolio />
-                <Footer />
               </Route>
               <Route path="/client1">
-                <Navigation />
                 <Client1 />
                 <FooterPortfolio />
               </Route>
               <Route path="/contact">
-                <Navigation />
                 <Contact />
-                <Footer />
               </Route>
               <Redirect to="/" />
             </Switch>
