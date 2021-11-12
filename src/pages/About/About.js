@@ -3,6 +3,7 @@ import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import chevronDown from "./chevronDown.png";
 import { HashLink as Link } from "react-router-hash-link";
+// import Footer from "../../Components/Footer/Footer";
 
 const About = () => {
   return (
@@ -38,6 +39,7 @@ const About = () => {
           <Link to="/client1">Client 1</Link>
         </PageStructure>
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };

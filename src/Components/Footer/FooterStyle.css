@@ -1,80 +1,10 @@
-@media (min-width: 1px) {
-  .footer {
-    margin-top: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: lightgoldenrodyellow;
-  }
-  .NavigationProfile {
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 32px 16px 32px 16px;
-    text-decoration: none;
-  }
-
-  /* .NavigationProfile > a {
-    padding: 8px 0px 8px 0px;
-  } */
-  .portfolio {
-    margin-bottom: 8px;
-    font-size: 22px;
-  }
-
-  .portfolioPages {
-    display: flex;
-    flex-direction: column;
-  }
-  .portfolioPages > a {
-    padding: 0px 0px 8px 0px;
-    font-size: 14px;
-    color: #9f9f9f;
-    text-decoration: none;
-  }
-  .portfolio > a {
-    color: #7d7d7d;
-    text-decoration: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .NavigationProfile {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    background-color: whitesmoke; */
-  }
-
-  .portfolioPages {
-    flex-direction: row;
-  }
-  .portfolioPages > a {
-    padding: 0px 8px 0px 0px;
-    font-size: 14px;
-    color: #9f9f9f;
-    text-decoration: none;
-  }
-  .portfolioPages > a:hover {
-    color: #2d2d2d;
-    text-decoration: underline;
-  }
-
-  .portfolio > a {
-    color: #7d7d7d;
-    text-decoration: none;
-  }
-  .portfolio > a:hover {
-    color: #2d2d2d;
-    text-decoration: underline;
-  }
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgoldenrodyellow;
+  bottom: 0;
+  position: absolute;
 }

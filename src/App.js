@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
-import Footer from "./Components/Footer/Footer";
+
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
+import Footer from "./Components/Footer/Footer";
 
 import About from "./Pages/About/About";
 
@@ -23,28 +24,29 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <body>
-          <Navigation />
-          <Footer />
-          <main>
-            <Switch>
-              <Route path="/" exact>
-                <About />
-              </Route>
-              <Route path="/portfolio">
-                <Portfolio />
-              </Route>
-              <Route path="/client1">
-                <Client1 />
-                <FooterPortfolio />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Redirect to="/" />
-            </Switch>
-          </main>
-        </body>
+        {/* <body> */}
+        <Navigation />
+        {/* <main> */}
+        <Switch>
+          <Route path="/" exact>
+            <About />
+            <Footer />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+            <Footer />
+          </Route>
+          <Route path="/client1">
+            <Client1 />
+            <FooterPortfolio />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+            <Footer />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+        {/* </main> */}
       </div>
     </Router>
   );
