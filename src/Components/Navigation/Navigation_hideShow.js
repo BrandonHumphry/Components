@@ -2,7 +2,7 @@ import "./Navigation_hideShow.css";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function Navigation() {
+function Navigation_hideShow() {
   const [show, handleShow] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
 
@@ -100,4 +100,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Navigation_hideShow;
