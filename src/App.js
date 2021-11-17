@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -7,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
+import HideShowNav from "./Components/Navigation/HideShowNav";
 
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 import Footer from "./Components/Footer/Footer";
@@ -19,17 +19,14 @@ import Client1 from "./Pages/PortfolioClients/Client1/Client1";
 import Contact from "./Pages/Contact/Contact";
 
 import "./App.css";
-import Navigation_hideShow from "./Components/Navigation/Navigation_hideShow";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        {/* <body> */}
-        {/* <main> */}
         <Switch>
           <Route path="/" exact>
-            <Navigation_hideShow />
+            <HideShowNav />
             <About />
             <Footer />
           </Route>
@@ -39,7 +36,7 @@ const App = () => {
             <Footer />
           </Route>
           <Route path="/client1">
-            <Navigation />
+            <HideShowNav />
             <Client1 />
             <FooterPortfolio />
           </Route>
@@ -50,7 +47,6 @@ const App = () => {
           </Route>
           <Redirect to="/" />
         </Switch>
-        {/* </main> */}
       </div>
     </Router>
   );

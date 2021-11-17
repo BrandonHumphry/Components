@@ -10,7 +10,6 @@ html {
 body {
   margin: 0;
   font-family: "Sora", Arial, Helvetica, sans-serif;
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;

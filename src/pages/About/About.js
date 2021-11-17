@@ -3,6 +3,7 @@ import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import chevronDown from "./chevronDown.png";
 import { HashLink as Link } from "react-router-hash-link";
+
 // import Footer from "../../Components/Footer/Footer";
 
 const About = () => {

@@ -1,8 +1,8 @@
-import "./Navigation_hideShow.css";
+import "./HideShowNav.css";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function Navigation_hideShow() {
+function HideShowNav(props) {
   const [show, handleShow] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
 
@@ -32,7 +32,7 @@ function Navigation_hideShow() {
   // };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 20) {
         handleShow(true);
       } else handleShow(false);
     });
@@ -40,6 +40,8 @@ function Navigation_hideShow() {
       window.removeEventListener("scroll");
     };
   }, []);
+
+  if (props.location.pathname == "/portfolio") return null;
 
   return (
     <nav className={`navbar ${show && "nav_background"}`}>
@@ -100,4 +102,4 @@ function Navigation_hideShow() {
   );
 }
 
-export default Navigation_hideShow;
+export default HideShowNav;

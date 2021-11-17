@@ -1,6 +1,7 @@
 import "./Portfolio.css";
 import Card from "../../Components/Card/Card";
 import Ad from "../../Components/Card/ad.png";
+// import HideShowNav from "../../Components/Navigation/HideShowNav";
 
 const Portfolio = () => {
   return (
@@ -10,6 +11,7 @@ const Portfolio = () => {
         <li>Development</li>
         <li>Illustration</li>
       </div> */}
+      {/* <HideShowNav /> */}
 
       <div className="gallery">
         <Card
