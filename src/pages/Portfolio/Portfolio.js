@@ -1,6 +1,7 @@
 import "./Portfolio.css";
 import Card from "../../Components/Card/Card";
 import Ad from "../../Components/Card/ad.png";
+import PageStructure from "../../Components/PageStructure/PageStructure";
 // import HideShowNav from "../../Components/Navigation/HideShowNav";
 
 const Portfolio = () => {

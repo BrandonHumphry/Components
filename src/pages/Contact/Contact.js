@@ -38,13 +38,15 @@ const Contact = ({ data }) => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
       />
       <div className="buttonSection">
-        <a
-          className="btn btn--primary--solid btn--medium"
-          href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
-          target="_top"
-        >
-          E - mail Me
-        </a>
+        <button>
+          <a
+            className="btn btn--primary--solid btn--medium"
+            href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
+            target="_top"
+          >
+            E - mail Me
+          </a>
+        </button>
       </div>
     </div>
   );

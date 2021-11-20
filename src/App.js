@@ -31,7 +31,7 @@ const App = () => {
             <Footer />
           </Route>
           <Route path="/portfolio">
-            <Navigation />
+            <HideShowNav />
             <Portfolio />
             <Footer />
           </Route>
@@ -41,7 +41,7 @@ const App = () => {
             <FooterPortfolio />
           </Route>
           <Route path="/contact">
-            <Navigation />
+            <HideShowNav />
             <Contact />
             <Footer />
           </Route>

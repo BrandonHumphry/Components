@@ -41,8 +41,6 @@ function HideShowNav(props) {
     };
   }, []);
 
-  if (props.location.pathname == "/portfolio") return null;
-
   return (
     <nav className={`navbar ${show && "nav_background"}`}>
       <div className="logo" alt="logo"></div>
