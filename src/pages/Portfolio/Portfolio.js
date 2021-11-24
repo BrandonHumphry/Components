@@ -12,7 +12,16 @@ const Portfolio = () => {
         <li>Development</li>
         <li>Illustration</li>
       </div> */}
-      {/* <HideShowNav /> */}
+
+      <PageStructure
+        id="Portfolio"
+        pageTitle="Portfolio"
+        pageDescription="blah blah blah blah blah blah blah blah blah blah 
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah 
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+      />
 
       <div className="gallery">
         <Card

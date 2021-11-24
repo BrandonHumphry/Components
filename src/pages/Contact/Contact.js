@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "./Contact.css";
+import Button from "../../Components/Button/Button";
 
 const Contact = ({ data }) => {
   const [name, setName] = useState("");
@@ -29,6 +30,11 @@ const Contact = ({ data }) => {
     );
   };
 
+  const sendEmail = () => {
+    window.location =
+      "mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20";
+  };
+
   return (
     <div>
       <PageStructure
@@ -38,15 +44,20 @@ const Contact = ({ data }) => {
                         minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
       />
       <div className="buttonSection">
-        <button>
-          <a
-            className="btn btn--primary--solid btn--medium"
-            href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
-            target="_top"
-          >
-            E - mail Me
-          </a>
-        </button>
+        <Button
+          className="btn btn--primary--solid btn--medium"
+          onClick={sendEmail}
+          // target="_top"
+        >
+          E - mail Me
+        </Button>
+        {/* <Button
+          className="btn btn--primary--solid btn--medium"
+          href="mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20"
+          target="_top"
+        >
+          E - mail Me
+        </Button> */}
       </div>
     </div>
   );
