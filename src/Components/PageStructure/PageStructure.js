@@ -1,15 +1,31 @@
+import { Button } from "@material-ui/core";
 import "./PageStructure.css";
-import { HashLink as Link } from "react-router-hash-link";
 
 const PageStructure = props => {
-  const { pageTitle, pageDescription, id, link1 } = props;
+  const { pageTitle, pageDescription, id, Buttonlocation1, Buttonlocation2 } =
+    props;
+
+  const buttonlocation1 = () => {
+    window.location =
+      "mailto:eandedesignstudio@gmail.com?Subject=StudioEandE.com%20";
+  };
+
   return (
     <div>
       <div className="pageStructure" id={id}>
         <h1 className="pageTitle">{pageTitle}</h1>
         <p className="pageDescription ">{pageDescription}</p>
       </div>
-      <Link to={link1}></Link>
+      <div className="buttonSection">
+        <Button
+          className="btn btn--primary--solid btn--medium"
+          onClick={buttonlocation1}
+        ></Button>
+        <Button
+          className="btn btn--primary--solid btn--medium"
+          onClick={Buttonlocation2}
+        ></Button>
+      </div>
     </div>
   );
 };

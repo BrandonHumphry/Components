@@ -23,10 +23,10 @@
 }
 
 @media (min-width: 768px) {
-  /* .pageStructure {
+  .pageStructure {
     height: 100vh !important
     ;
-  } */
+  }
   .pageTitle {
     text-align: center;
   }

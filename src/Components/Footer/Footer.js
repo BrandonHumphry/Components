@@ -9,7 +9,7 @@ const Footer = () => {
           <i className="icon-up-open"></i>
         </a>
       </div>
-      <section>studioeande 2021</section>
+      <section>studioEandE 2021</section>
     </footer>
   );
 };

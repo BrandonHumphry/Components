@@ -2,7 +2,7 @@ import "./About.css";
 import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import chevronDown from "./chevronDown.png";
-import { HashLink as Link } from "react-router-hash-link";
+import Button from "../../Components/Button/Button";
 
 // import Footer from "../../Components/Footer/Footer";
 
@@ -23,6 +23,7 @@ const About = () => {
           /> */}
         {/* </Link> */}
       </div>
+
       <div id="section2">
         <PageStructure
           id="intro"
@@ -36,11 +37,8 @@ const About = () => {
         modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
         error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
         dolorem! Officiis iure rerum voluptates a cumque veli"
-        >
-          <Link to="/client1">Client 1</Link>
-        </PageStructure>
+        ></PageStructure>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
