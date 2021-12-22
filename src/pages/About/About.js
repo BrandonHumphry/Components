@@ -3,8 +3,7 @@ import PageStructure from "../../Components/PageStructure/PageStructure";
 import "../../Components/Images/Images.css";
 import chevronDown from "./chevronDown.png";
 import Button from "../../Components/Button/Button";
-
-// import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -38,6 +37,18 @@ const About = () => {
         error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
         dolorem! Officiis iure rerum voluptates a cumque veli"
         ></PageStructure>
+        <div
+          className="d"
+          Style={
+            "height: 100px; color: white; textDecoration: none; backgroundColor: green"
+          }
+        >
+          <Button>
+            <Link Style={"height: 100px; color: white;"} to="/portfolio">
+              Portfolio
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   );

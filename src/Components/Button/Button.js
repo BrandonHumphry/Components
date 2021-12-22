@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Button.css";
 
 const STYLES = [
@@ -14,7 +15,7 @@ const STYLES = [
 const SIZES = ["btn--medium", "btn--large"];
 
 const Button = props => {
-  const { children, type, onClick, buttonStyle, buttonSize } = props;
+  const { children, type, onClick, buttonStyle, buttonSize, linkTo } = props;
 
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -23,13 +24,16 @@ const Button = props => {
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <button
-      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-      onClick={onClick}
-      type={type}
-    >
-      {children}
-    </button>
+    <div>
+      <button
+        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        onClick={onClick}
+        type={type}
+      >
+        {children}
+      </button>
+      <Link to={linkTo}>{linkTo}</Link>
+    </div>
   );
 };
 
