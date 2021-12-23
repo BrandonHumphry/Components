@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Navigation from "./Components/Navigation/Navigation";
-import HideShowNav from "./Components/Navigation/HideShowNav";
+// import HideShowNav from "./Components/Navigation/HideShowNav";
 
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 import Footer from "./Components/Footer/Footer";
@@ -26,22 +26,22 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route path="/" exact>
-            <HideShowNav />
+            <Navigation />
             <About />
             <Footer />
           </Route>
           <Route path="/portfolio">
-            <HideShowNav />
+            <Navigation />
             <Portfolio />
             <Footer />
           </Route>
           <Route path="/client1">
-            <HideShowNav />
+            <Navigation />
             <Client1 />
             <FooterPortfolio />
           </Route>
           <Route path="/contact">
-            <HideShowNav />
+            <Navigation />
             <Contact />
             <Footer />
           </Route>

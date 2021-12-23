@@ -43,11 +43,12 @@ const About = () => {
             "height: 100px; color: white; textDecoration: none; backgroundColor: green"
           }
         >
-          <Button>
-            <Link Style={"height: 100px; color: white;"} to="/portfolio">
-              Portfolio
-            </Link>
-          </Button>
+          <Link Style={"height: 100px; color: white;"} to="/portfolio">
+            <Button>Portfolio</Button>
+          </Link>
+          <Link Style={"height: 100px; color: white;"} to="/contact">
+            <Button>Contact</Button>
+          </Link>
         </div>
       </div>
     </div>

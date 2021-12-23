@@ -15,7 +15,7 @@ const STYLES = [
 const SIZES = ["btn--medium", "btn--large"];
 
 const Button = props => {
-  const { children, type, onClick, buttonStyle, buttonSize, linkTo } = props;
+  const { children, type, onClick, buttonStyle, buttonSize } = props;
 
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -32,7 +32,7 @@ const Button = props => {
       >
         {children}
       </button>
-      <Link to={linkTo}>{linkTo}</Link>
+      {/* <Link to={linkTo}>{linkTo}</Link> */}
     </div>
   );
 };
