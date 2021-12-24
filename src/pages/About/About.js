@@ -37,16 +37,12 @@ const About = () => {
         error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
         dolorem! Officiis iure rerum voluptates a cumque veli"
         ></PageStructure>
-        <div
-          className="d"
-          Style={
-            "height: 100px; color: white; textDecoration: none; backgroundColor: green"
-          }
-        >
-          <Link Style={"height: 100px; color: white;"} to="/portfolio">
+
+        <div className="buttonSection">
+          <Link to="/portfolio">
             <Button>Portfolio</Button>
           </Link>
-          <Link Style={"height: 100px; color: white;"} to="/contact">
+          <Link to="/contact">
             <Button>Contact</Button>
           </Link>
         </div>

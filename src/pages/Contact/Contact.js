@@ -41,7 +41,9 @@ const Contact = ({ data }) => {
         pageTitle="Contact"
         pageDescription="Provident similique accusantium nemo autem. Veritatis
                         obcaecati tenetur iure e\adipisci amet laborum. Perspiciatis 
-                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli"
+                        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque veli
+                        eandedesignstudio@gmail.com
+                        "
       />
       <div className="buttonSection">
         <Button
@@ -49,7 +51,7 @@ const Contact = ({ data }) => {
           onClick={sendEmail}
           // target="_top"
         >
-          E - mail Me
+          Email me
         </Button>
         {/* <Button
           className="btn btn--primary--solid btn--medium"
