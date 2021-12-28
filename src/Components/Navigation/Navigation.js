@@ -20,7 +20,7 @@ function Navigation() {
 
       <div className="navbar-links" id={showLinks ? "hidden" : ""}>
         <ul>
-          <li>
+          {/* <li>
             <NavLink
               exact
               to="/"
@@ -33,7 +33,7 @@ function Navigation() {
             >
               About
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               exact
@@ -48,6 +48,20 @@ function Navigation() {
               Portfolio
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              exact
+              to="/recent"
+              onClick={() => {
+                setShowLinks(!showLinks);
+                // overflow();
+              }}
+              activeClassName="selected"
+              className="navLinkItem"
+            >
+              Recent
+            </NavLink>
+          </li>{" "}
           <li>
             <NavLink
               exact

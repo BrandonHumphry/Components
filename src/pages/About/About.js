@@ -40,11 +40,11 @@ const About = () => {
 
         <div className="buttonSection">
           <Link to="/portfolio">
-            <Button>Portfolio</Button>
+            <Button>Enter site</Button>
           </Link>
-          <Link to="/contact">
+          {/* <Link to="/contact">
             <Button>Contact</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
