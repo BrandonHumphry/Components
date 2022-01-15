@@ -23,7 +23,7 @@ const About = () => {
         {/* </Link> */}
       </div>
 
-      <div id="section2">
+      <div id="section2" style={{ height: "100vh" }}>
         <PageStructure
           id="intro"
           pageTitle="Home"

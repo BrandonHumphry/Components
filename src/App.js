@@ -2,11 +2,13 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch
+  Switch,
+  withRouter
 } from "react-router-dom";
 
+import { useEffect } from "react";
+
 import Navigation from "./Components/Navigation/Navigation";
-// import HideShowNav from "./Components/Navigation/HideShowNav";
 
 import FooterPortfolio from "./Components/Footer/FooterPortfolio";
 import Footer from "./Components/Footer/Footer";
@@ -19,11 +21,13 @@ import Client1 from "./Pages/PortfolioClients/Client1/Client1";
 import Contact from "./Pages/Contact/Contact";
 
 import "./App.css";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact>
             <About />
