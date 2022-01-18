@@ -3,13 +3,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(104, 104, 104);
-  color: white;
-  font-size: 12px;
+  text-align: center;
+  background-color: rgb(233, 233, 233);
+  font-size: 14px;
   font-weight: 100 !important;
   letter-spacing: 1px;
   padding: 8px 0 8px 0;
   bottom: 0;
   position: absolute;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  color: black !important;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio {
+    padding-bottom: 48px;
+  }
+  .portfolioPages {
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterPortfolioItem {
+    color: black;
+    padding-bottom: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .FooterPortfolioItem {
+    color: black;
+    padding-right: 24px;
+  }
+  .portfolioPages {
+    padding-bottom: 24px;
+  }
+  .studioeande {
+    color: #555;
+    font-size: 12px;
+  }
 }

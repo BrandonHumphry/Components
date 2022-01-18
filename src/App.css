@@ -15,3 +15,11 @@ body {
   flex-direction: column;
   position: relative;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
